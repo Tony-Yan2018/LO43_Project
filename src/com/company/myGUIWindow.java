@@ -1,11 +1,7 @@
 package com.company;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import  java.awt.geom.Path2D;
-import java.util.Random;
 
 public class myGUIWindow extends JFrame{
     private int MyWidth;
@@ -31,6 +27,7 @@ public class myGUIWindow extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setVisible(true);
+        setLayout(null);
     }
 
     private class MyPanel extends JPanel{
@@ -58,8 +55,17 @@ public class myGUIWindow extends JFrame{
 
                 Controller.getHEX()[i].diceRes.setBounds((int)Controller.getHEX()[i].xCenter,(int)Controller.getHEX()[i].yCenter,100,15);
                 this.add(Controller.getHEX()[i].diceRes);
+        }
+            for(Vertex v:MyListOfVertex.va){
+                v.RB.setBounds((int)v.xCoord,(int)v.yCoord,40,40);
+                Font f = new Font("Times New Roman",Font.PLAIN,8);
+                v.RB.setFont(f);
+                add(v.RB);
 
             }
+            JComboBox<Vertex> combo = new JComboBox<Vertex>();
+            combo.setBounds(900,50,100,50);
+            add(combo);
             }
 
         @Override

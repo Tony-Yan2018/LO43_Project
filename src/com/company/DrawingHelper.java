@@ -1,8 +1,8 @@
 package com.company;
 
-import javax.swing.*;
+
 import java.awt.*;
-import java.awt.geom.Path2D;
+import java.awt.geom.Ellipse2D;
 
 /*
 This class contains most of the drawing methods used in the project
@@ -20,6 +20,12 @@ public class DrawingHelper {
         g2h.setColor(c);
         g2h.setStroke(new BasicStroke(4f));//Sets the Stroke for the Graphics2D context.
         g2h.draw(s);//Strokes the outline of a Shape using the settings of the current Graphics2D context
+    }
+    public static void drawCircle(Graphics2D g2h,double r, double xCoor, double yCoor,Color c){
+        Ellipse2D circle = new Ellipse2D.Double(2*r,2*r,xCoor-r,yCoor-r);
+        circle.setFrameFromCenter(xCoor,yCoor,xCoor+r,yCoor+r);
+        g2h.setColor(c);
+        g2h.draw(circle);
     }
 
 }
