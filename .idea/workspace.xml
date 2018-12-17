@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HexGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HexGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Vertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" afterDir="false" />
-    </list>
+    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="finished with data structure of graph with connection info between vertex saved" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,12 +19,12 @@
     <session id="-933722597">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="6" />
-          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -215,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="2520" />
     <option name="height" value="1200" />
@@ -322,7 +304,7 @@
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.17246963" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.17489879" />
       <window_info id="Structure" order="1" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
