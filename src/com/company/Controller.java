@@ -52,13 +52,12 @@ public class Controller {
             while (current.next!=null){
                 System.out.print(current.num+"->"+current.next.num+'\n');
                 current=current.next;
-            }
+            }//test the Adjacency List
         }*/
         //initialize view
         EventQueue.invokeLater(()->{
             Frame = new myGUIWindow(t,Width,Height);
         });
-
     }
     //generate a random number from 0 to 18
     public int wormholeDeterminer(){

@@ -1,6 +1,5 @@
 package com.company;
 
-
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 
@@ -8,10 +7,9 @@ import java.awt.geom.Ellipse2D;
 This class contains most of the drawing methods used in the project
 * */
 public class DrawingHelper {
-    //helping class cannot be instanced
+    //helping class should not be instanced
     private void DrawingHelper(){};
-    //shared drawing methods
-
+    //drawing methods
     public static void setHexColor(Graphics2D g2h,Shape s,Color c){
         g2h.setColor(c);
         g2h.fill(s);

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="" />
+    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HexGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HexGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RoundButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Vertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Vertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,35 +27,44 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Catan$Main.ic" NAME="Main Coverage Results" MODIFIED="1544917196819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="75" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-933722597">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8030" />
+          <entry key="java" value="9041" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8030" />
+          <entry key="JAVA" value="13850" />
+          <entry key="PLAIN_TEXT" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="13" />
+          <entry key="java" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="13" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="34" />
         </counts>
       </usages-collector>
     </session>
@@ -48,10 +75,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="1121">
+              <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/RoundButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="228">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/DrawingHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="190">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,17 +122,37 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="646">
+              <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,12 +161,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Hexagone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+            <state relative-caret-position="266">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#790#1021#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,20 +173,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/HexGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            <state relative-caret-position="475">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Maps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -144,16 +192,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Maps.java" />
-        <option value="$PROJECT_DIR$/src/com/company/DrawingHelper.java" />
-        <option value="$PROJECT_DIR$/src/com/company/myGUIWindow.java" />
         <option value="$PROJECT_DIR$/src/com/company/Hexagone.java" />
+        <option value="$PROJECT_DIR$/src/com/company/SetList.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AdjacencyMatrix.java" />
+        <option value="$PROJECT_DIR$/src/com/company/AdjacencyList.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RoundJButton.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" />
+        <option value="$PROJECT_DIR$/src/com/company/DrawingHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Vertex.java" />
         <option value="$PROJECT_DIR$/src/com/company/HexGame.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/company/myGUIWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RoundButton.java" />
       </list>
     </option>
   </component>
@@ -162,6 +220,7 @@
     <option name="width" value="2520" />
     <option name="height" value="1200" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -175,6 +234,11 @@
             <path>
               <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
               <item name="Catan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Catan" type="462c0819:PsiDirectoryNode" />
+              <item name="resourcePicture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
@@ -194,7 +258,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544388638618" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544998928687" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,9 +275,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Controller" />
       <module name="Catan" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -236,13 +300,29 @@
       <option name="presentableId" value="Default" />
       <updated>1542896612783</updated>
     </task>
+    <task id="LOCAL-00001" summary="finished with data structure of graph with connection info between vertex saved">
+      <created>1544917463919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544917463919</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="693" extended-state="7" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.17894737" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.17246963" />
       <window_info id="Structure" order="1" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -250,16 +330,16 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20071048" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1975089" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3024911" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291815" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3285968" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32740214" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,23 +348,17 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.22024292" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished with data structure of graph with connection info between vertex saved" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished with data structure of graph with connection info between vertex saved" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="2478" column="15" selection-start-line="2478" selection-start-column="15" selection-end-line="2478" selection-end-column="15" />
-          <folding>
-            <element signature="e#85273#85274#0" expanded="true" />
-            <element signature="e#85301#85302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -299,34 +373,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/SetList.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/AbstractSequentialList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="152">
+          <caret line="237" column="22" selection-start-line="237" selection-start-column="22" selection-end-line="237" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="403" column="8" selection-start-line="403" selection-start-column="8" selection-end-line="403" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Maps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyMatrix.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/RoundJButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/AbstractButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="1680" column="23" selection-start-line="1680" selection-start-column="23" selection-end-line="1680" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/ButtonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="1657" column="25" lean-forward="true" selection-start-line="1657" selection-start-column="25" selection-end-line="1657" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/java/awt/BasicStroke.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="286" column="11" selection-start-line="286" selection-start-column="11" selection-end-line="286" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="2196" column="16" selection-start-line="2196" selection-start-column="16" selection-end-line="2196" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resourcePicture/house.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1936">
-          <caret line="872" selection-start-line="872" selection-end-line="872" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Maps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="228">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -335,18 +458,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DrawingHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="190">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/HexGame.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -355,26 +498,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Hexagone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        <state relative-caret-position="266">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#790#1021#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/HexGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="475">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RoundButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

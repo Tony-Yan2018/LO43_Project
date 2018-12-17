@@ -9,7 +9,7 @@ public class MyListOfVertex {
     static Vertex[] va = new Vertex[54] ;
     /*singleton*/
     private MyListOfVertex(){
-        for(int i=0;i<54;i++){
+        for(int i=0;i<54;i++){//must initialize the self-defined class array
             va[i] = new Vertex(-1,-1,-1);
         }
     };

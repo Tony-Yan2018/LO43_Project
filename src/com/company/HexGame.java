@@ -21,6 +21,7 @@ public class HexGame {
     public static  ArrayList<Integer> cyan_4=new ArrayList<>(Arrays.asList(10,6,4,11));
     public static  ArrayList<Integer> orange_4=new ArrayList<>(Arrays.asList(10,9,8,5));
     public static boolean[] wormhole = {true,true,true};
+
     public HexGame(int id_Hex){
         setColorRes(Controller.getMap()[id_Hex]);
         setBiff(Controller.getMap()[id_Hex]);
