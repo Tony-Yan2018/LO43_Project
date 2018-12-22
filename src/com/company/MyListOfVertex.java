@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-
 public class MyListOfVertex {
     /*data*/
     static int realSize=0;
@@ -17,7 +14,6 @@ public class MyListOfVertex {
     public static MyListOfVertex getInstance(){
         return MV;
     }
-
     /*methods*/
     public void traverseToAdd(Vertex v,int n){
         boolean flag = false;//indicate if there is already the same point

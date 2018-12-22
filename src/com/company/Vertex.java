@@ -1,5 +1,9 @@
 package com.company;
 
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.util.HashSet;
 
@@ -10,7 +14,7 @@ public class Vertex {
     boolean city = false;
     Vertex next = null;
     int num;
-    RoundButton RB ;
+    int idPlayer = -1;
     HashSet<Integer> HexNum = new HashSet<>(3);
     /*copy constructor*/
     public Vertex(Vertex v){
@@ -28,6 +32,7 @@ public class Vertex {
         yCoord=y;
         HexNum.add(N);
         num=-1;
+
     }
     /*to compare if the two Vertex are the same(on the same place)*/
     public boolean equal(Vertex vertex){
@@ -46,4 +51,5 @@ public class Vertex {
     public void adds(int N){
         HexNum.add(N);
     }
+
 }

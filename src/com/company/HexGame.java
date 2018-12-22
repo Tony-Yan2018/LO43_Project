@@ -16,10 +16,10 @@ public class HexGame {
     /*
     * dice numbers assigned to each resource
     * */
-    public static  ArrayList<Integer> pink_4=new ArrayList<>(Arrays.asList(2,12,3,11));
-    public static  ArrayList<Integer> yellow_6=new ArrayList<>(Arrays.asList(4,9,3,6,8,5));
-    public static  ArrayList<Integer> cyan_4=new ArrayList<>(Arrays.asList(10,6,4,11));
-    public static  ArrayList<Integer> orange_4=new ArrayList<>(Arrays.asList(10,9,8,5));
+    private static  ArrayList<Integer> pink_4=new ArrayList<>(Arrays.asList(2,12,3,11));
+    private static  ArrayList<Integer> yellow_6=new ArrayList<>(Arrays.asList(4,9,3,6,8,5));
+    private static  ArrayList<Integer> cyan_4=new ArrayList<>(Arrays.asList(10,6,4,11));
+    private static  ArrayList<Integer> orange_4=new ArrayList<>(Arrays.asList(10,9,8,5));
     public static boolean[] wormhole = {true,true,true};
 
     public HexGame(int id_Hex){

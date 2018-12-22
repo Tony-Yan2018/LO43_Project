@@ -2,9 +2,6 @@ package com.company;
 import javax.swing.*;
 import java.awt.*;
 import  java.awt.geom.Path2D;
-import java.lang.reflect.InvocationTargetException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class myGUIWindow extends JFrame{
     private int MyWidth;
@@ -26,14 +23,21 @@ public class myGUIWindow extends JFrame{
         MyPanel canvas=new MyPanel();
         setContentPane(canvas);
         pack();
-
+        //canvas.setVisible(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setVisible(true);
         setLayout(null);
     }
-
     private class MyPanel extends JPanel{
+        public MyPanel() {
+            for(Vertex v:MyListOfVertex.va){
+                //v.RB.setBounds((int)v.xCoord-20,(int)v.yCoord-20,45,45);
+                add(Controller.RB[v.num]);
+            }
+//            JComboBox JCB1 = new JComboBox()
+//            add(JCB1);
+        }
         @Override
         public void paintComponent(Graphics g){
             super.paintComponent(g);
@@ -61,42 +65,8 @@ public class myGUIWindow extends JFrame{
                 this.add(Controller.getHEX()[i].diceRes);//and add it to the screen
         }
 //          /*add Buttons*/
-            for(Vertex v:MyListOfVertex.va){
-                /*To resolve the problem of low response,I try to generate JButton in separate threads.*/
-                SwingUtilities.invokeLater(new Runnable() {
-                    @Override
-                    public void run() {
-                        v.RB.setBounds((int)v.xCoord-20,(int)v.yCoord-20,45,45);
-                        add(v.RB);
-                    }
-                });
-
-//                t1.start();
-//                t1.stop();
-//                try{
-//                t1.join(1000);}
-//                catch(InterruptedException ie){
-//                    ie.printStackTrace();
-//                }
-//                Thread t2 = new Thread(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        Font f = new Font("Times New Roman",Font.PLAIN,8);
-//                        v.RB.JL.setFont(f);
-//                        add(v.RB.JL);
-//                    }
-//                },"T2");
-//                ExecutorService executor = Executors.newSingleThreadExecutor();
-//                executor.submit(t1);
-//                executor.submit(t2);
-//                executor.shutdown();
-
-
-
-
-
-
-
+            for(Vertex v:MyListOfVertex.va) {
+                Controller.RB[v.num].setBounds((int) v.xCoord - 20, (int) v.yCoord - 20, 45, 45);
             }
 //            JComboBox<Vertex> combo = new JComboBox<Vertex>();
 //            combo.setBounds(900,50,100,50);
@@ -108,5 +78,4 @@ public class myGUIWindow extends JFrame{
         }/*determine the size of the canvas in its proper class
          */
     }
-
 }
