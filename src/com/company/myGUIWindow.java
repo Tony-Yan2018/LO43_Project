@@ -31,12 +31,16 @@ public class myGUIWindow extends JFrame{
     }
     private class MyPanel extends JPanel{
         public MyPanel() {
+            for(int i=0;i<19;i++)
+                add(Controller.getHEX()[i].diceRes);//add JLabels of Hexagons
             for(Vertex v:MyListOfVertex.va){
-                //v.RB.setBounds((int)v.xCoord-20,(int)v.yCoord-20,45,45);
-                add(Controller.RB[v.num]);
+                add(Controller.RB[v.num]);//add RoundButtons
             }
-//            JComboBox JCB1 = new JComboBox()
-//            add(JCB1);
+            for(int i=0;i<16;i++) {
+                add(Controller.JB[i]);
+            }
+            for(int i=0;i<4;i++)
+                add(Controller.Jscrolls[i]);
         }
         @Override
         public void paintComponent(Graphics g){
@@ -62,16 +66,18 @@ public class myGUIWindow extends JFrame{
 
                 //set number(JLabel) of each hex in its proper position
                 Controller.getHEX()[i].diceRes.setBounds((int)Controller.getHEX()[i].xCenter,(int)Controller.getHEX()[i].yCenter,100,15);
-                this.add(Controller.getHEX()[i].diceRes);//and add it to the screen
+
         }
-//          /*add Buttons*/
+//          /*add RoundButtons to the screen*/
             for(Vertex v:MyListOfVertex.va) {
                 Controller.RB[v.num].setBounds((int) v.xCoord - 20, (int) v.yCoord - 20, 45, 45);
             }
-//            JComboBox<Vertex> combo = new JComboBox<Vertex>();
-//            combo.setBounds(900,50,100,50);
-//            add(combo);
-            }
+            for(int i=0;i<16;i++)
+                Controller.JB[i].setBounds((Controller.ListButtons.Pb[i].xcoord), Controller.ListButtons.Pb[i].ycoord, Controller.ListButtons.Pb[i].xsize, Controller.ListButtons.Pb[i].ysize);
+            for(int i=0;i<4;i++)
+                Controller.Jscrolls[i].setBounds(Controller.ListT.coord[i][0], Controller.ListT.coord[i][1], Controller.ListT.coord[i][2], Controller.ListT.coord[i][3]);
+        }
+
         @Override
         public Dimension getPreferredSize(){
             return new Dimension(MyWidth,MyHeight);

@@ -1,5 +1,8 @@
 package com.company;
 
+import inGame.PlayerManager;
+import userInterface.*;
+import javax.swing.*;
 import javax.tools.Tool;
 import java.awt.*;
 import java.util.HashSet;
@@ -14,6 +17,13 @@ public class Controller {
     AdjacencyList AL ;
     static RoundButton[] RB = new RoundButton[54];
     static int act= 0;
+
+    static ListOfJbuttons ListButtons;
+    static UButton[] JB=new UButton[16];
+
+    public static PlayerManager PM=new PlayerManager();
+    public static ListOfTable ListT;
+    public static JScrollPane[] Jscrolls=new JScrollPane[4];
     //view field
     private static myGUIWindow Frame;
     public static Hexagone[] getHEX() {
@@ -43,7 +53,6 @@ public class Controller {
             MyListOfVertex.va[i].num=i;
             RB[i] = new RoundButton(String.valueOf(i),i);
         }
-
         //instance a new Adjacency List with the parameter of the vertex array
         AL = new AdjacencyList(MyListOfVertex.getInstance());
         //scan each vertex in the array to find connections between vertex
@@ -56,6 +65,10 @@ public class Controller {
                 current=current.next;
             }//test the Adjacency List
         }*/
+        for(int i=0;i<16;i++) {
+            JB[i]=new UButton(ListButtons.Pb[i].name,i);
+        }
+        setScrollers();
         //initialize view
         EventQueue.invokeLater(()->{
             Frame = new myGUIWindow(t,Width,Height);
@@ -82,6 +95,14 @@ public class Controller {
             H[i].HG.Wormhole=true;
         }
     }
+    public void setScrollers() {
+        PM=new PlayerManager();
+
+        //ListOfTable listOfTable = new ListOfTable(players);
+        ListT=new ListOfTable(PM.PS);
+        for(int i=0;i<4;i++)
+            Jscrolls[i]=new JScrollPane(ListT.LT[i]);
+    }
     public static void main(String[] args) {
         Toolkit t = Toolkit.getDefaultToolkit();
         Dimension Dt = t.getScreenSize();
@@ -91,7 +112,7 @@ public class Controller {
         double side=70;//length of side of each hexagon
         double xC=(double)sceneWidth/2;//the center of the window which is also the center of map
         double yC=(double)sceneHeight/2;
-        int m=2;//indicate the map to use
+        int m=1;//indicate the map to use
         Controller visualisation=new Controller(xC,yC,side,title,sceneWidth,sceneHeight,m);
         MyListOfVertex.va[2].idPlayer=2;
         MyListOfVertex.va[8].idPlayer=1;

@@ -6,12 +6,12 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class RoundButton extends JButton {
-    int i ;
+    int idButton;
     boolean clicked = false;
     int count = 0;
     public RoundButton(String s,int n) {
         super(s);
-        i=n;
+        idButton=n;
         setFont(new Font("Times New Roman",Font.CENTER_BASELINE,11));
         //allows to draw our own background instead of auto-filling the bounding box
         setContentAreaFilled(false);
@@ -56,12 +56,12 @@ public class RoundButton extends JButton {
     }
     void updateInfo(int count){
         switch (count){
-            case (1):  MyListOfVertex.va[i].village=true;
+            case (1):  MyListOfVertex.va[idButton].village=true;
             break;
-            case (2): MyListOfVertex.va[i].city=true;
+            case (2): MyListOfVertex.va[idButton].city=true;
             break;
-            case (3): MyListOfVertex.va[i].city=false;
-                        MyListOfVertex.va[i].village=false;
+            case (3): MyListOfVertex.va[idButton].city=false;
+                        MyListOfVertex.va[idButton].village=false;
                         break;
     }
     }

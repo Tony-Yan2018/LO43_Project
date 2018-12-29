@@ -28,7 +28,6 @@ public class HexGame {
         diceNum=diceNumPicker(ResNum);
 
     }
-
     public void setColorRes(int colorRes) {
         switch (colorRes){
             case 0:ColorRes=Color.lightGray;//color of Biff

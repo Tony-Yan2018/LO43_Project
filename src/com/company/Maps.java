@@ -1,7 +1,7 @@
 package com.company;
 
 public class Maps {
-    private Maps(){};//instance forbidden
+    private Maps(){}//instance forbidden
     //the maps of four eras
     public static final int[] mapColorRes_1={3,1,2,3,2,4,1,2,4,1,2,3,1,2,4,0,4,3,2};
     public static final int[] mapColorRes_2={2,3,1,4,3,4,3,1,2,0,2,1,4,3,2,4,2,1,2};
