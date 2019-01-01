@@ -31,17 +31,28 @@ public class myGUIWindow extends JFrame{
     }
     private class MyPanel extends JPanel{
         public MyPanel() {
-            for(int i=0;i<19;i++)
+            for(int i=0;i<19;i++) {
                 add(Controller.getHEX()[i].diceRes);//add JLabels of Hexagons
+            }
             for(Vertex v:MyListOfVertex.va){
                 add(Controller.RB[v.num]);//add RoundButtons
             }
             for(int i=0;i<16;i++) {
-                add(Controller.JB[i]);
+                add(Controller.playerButtons[i]);
             }
-            for(int i=0;i<4;i++)
+            for(int i=0;i<4;i++) {
                 add(Controller.Jscrolls[i]);
+            }
+            add(Controller.dice.l1);
+            add(Controller.dice.l2);
+            add(Controller.dice.l3);
+            add(Controller.dice.l4);
+            add(Controller.dice.l5);
+            add(Controller.dice.b);
+            add(Controller.turn);
+            add(Controller.turnB);
         }
+
         @Override
         public void paintComponent(Graphics g){
             super.paintComponent(g);
@@ -73,9 +84,21 @@ public class myGUIWindow extends JFrame{
                 Controller.RB[v.num].setBounds((int) v.xCoord - 20, (int) v.yCoord - 20, 45, 45);
             }
             for(int i=0;i<16;i++)
-                Controller.JB[i].setBounds((Controller.ListButtons.Pb[i].xcoord), Controller.ListButtons.Pb[i].ycoord, Controller.ListButtons.Pb[i].xsize, Controller.ListButtons.Pb[i].ysize);
+                Controller.playerButtons[i].setBounds(Controller.playerButtons[i].xcoord,Controller.playerButtons[i].ycoord,Controller.playerButtons[i].xsize,Controller.playerButtons[i].ysize);
             for(int i=0;i<4;i++)
                 Controller.Jscrolls[i].setBounds(Controller.ListT.coord[i][0], Controller.ListT.coord[i][1], Controller.ListT.coord[i][2], Controller.ListT.coord[i][3]);
+            Toolkit t = Toolkit.getDefaultToolkit();
+            Dimension Dt = t.getScreenSize();
+            Controller.dice.l1.setBounds((int)(Dt.getWidth()*0.02),(int)(Dt.getHeight()*0.35),100,30);
+            Controller.dice.l2.setBounds((int)(Dt.getWidth()*0.02),(int)(Dt.getHeight()*0.4),50,30);
+            Controller.dice.l3.setBounds((int)(Dt.getWidth()*0.06),(int)(Dt.getHeight()*0.4),50,30);
+            Controller.dice.l4.setBounds((int)(Dt.getWidth()*0.02),(int)(Dt.getHeight()*0.45),100,30);
+            Controller.dice.l5.setBounds((int)(Dt.getWidth()*0.06),(int)(Dt.getHeight()*0.45),50,30);
+            Controller.dice.b.setBounds((int)(Dt.getWidth()*0.02),(int)(Dt.getHeight()*0.5),150,30);
+
+            Controller.turn.setBounds((int)(Dt.getWidth()*0.85),(int)(Dt.getHeight()*0.45),300,30);
+            Controller.turnB.setBounds((int)(Dt.getWidth()*0.88),(int)(Dt.getHeight()*0.50),100,30);
+
         }
 
         @Override

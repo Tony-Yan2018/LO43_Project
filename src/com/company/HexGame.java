@@ -10,8 +10,8 @@ public class HexGame {
     Color ColorRes;//determine the color to display according to its resource
     boolean Biff;//indicate if Biff is on this hex
     boolean Wormhole;//indicate if this hex has a wormhole
-    int[] IndicesPlayer =new int[6];//indicate players of the buildings on the 6 vertex
-    private int ResNum;//indicate the resource the hex belong to from 0 to 4
+    ArrayList<Integer> IndicesPlayer =new ArrayList<>(6);//indicate players of the buildings on the 6 vertex
+    int ResNum;//indicate the resource the hex belong to from 0 to 4
     int diceNum;//the dice number to display according to its resource
     /*
     * dice numbers assigned to each resource
@@ -26,7 +26,6 @@ public class HexGame {
         setColorRes(Controller.getMap()[id_Hex]);
         setBiff(Controller.getMap()[id_Hex]);
         diceNum=diceNumPicker(ResNum);
-
     }
     public void setColorRes(int colorRes) {
         switch (colorRes){

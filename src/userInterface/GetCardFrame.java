@@ -18,8 +18,8 @@ public class GetCardFrame extends JFrame {
 	int Res1,Res2,Res3,Res4;
 	String qtty1,qtty2,qtty3,qtty4;
 	int q1,q2,q3,q4;
-	GetCardFrame(String title,int idPlayer){
-		super(title);
+	GetCardFrame(int idPlayer){
+		super("Get Card");
 		thisPlayer=idPlayer;
 		setLayout(null);
 		setSize(600,500);
@@ -157,7 +157,7 @@ public class GetCardFrame extends JFrame {
         		q3=Integer.parseInt(qtty3);q4=Integer.parseInt(qtty4);
         		res2Res(res1,Res1);res2Res(res2,Res2);
 				res2Res(res3,Res3);res2Res(res4,Res4);
-				Controller.PM.PS[thisPlayer].getCard(Res1,Res2,Res3,Res4,q1,q2,q3,q4);
+				Controller.players[thisPlayer].getCard(Res1,Res2,Res3,Res4,q1,q2,q3,q4);
            }
         });
         

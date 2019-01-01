@@ -101,10 +101,12 @@ public class TradeFrame extends JFrame{
 				Quantity2=Integer.parseInt(qtty2);
 				res2Res(res1,Res1);
 				res2Res(res2,Res2);
-				Controller.PM.tradePlayers(Res1,Res2,Quantity1,Quantity2,thisPlayer,tradePlayer);
+//				Controller.PM.tradePlayers(Res1,Res2,Quantity1,Quantity2,thisPlayer,tradePlayer);
 				for(int i=0;i<4;i++) {
+					Controller.ListT.LT[i].validate();
 				Controller.ListT.LT[i].repaint();
-				Controller.Jscrolls[i].updateUI();}
+				//Controller.Jscrolls[i].updateUI();
+				}
 			}
         });
         final JLabel label5 = new JLabel("Player to trade");
