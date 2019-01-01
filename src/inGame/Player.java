@@ -74,25 +74,23 @@ public class Player {
 		resource[2]-=q3;
 		resource[3]-=q4;
 	}
-	public void getCard(int res1,int res2,int res3,int res4,int q1,int q2,int q3,int q4) {
-		int sum =res1*q1+res2*q2+res3*q3+res4*q4;
-		if(sum>=12) {
-			useRes(q1,q2,q3, q4);
-			Random ran = new Random();
-			int i=ran.nextInt(3-1)+1;
-			switch (i){
-				case(1):
-					harvestCard+=1;
-					break;
-				case (2):
-					roadCard+=1;
-					break;
-				case (3):
-					scoreCard=true;
-					scoreCardCount++;
-					break;
-			}
-			}
+	public int getCard() {
+
+		Random ran = new Random();
+		int i=ran.nextInt(3-1)+1;
+		switch (i){
+			case(1):
+				harvestCard+=1;
+				break;
+			case (2):
+				roadCard+=1;
+				break;
+			case (3):
+				scoreCard=true;
+				scoreCardCount++;
+				break;
+		}
+		return i;
 	}
 	public void useCard(int cardNum){
 		switch (cardNum){

@@ -32,7 +32,9 @@ public class Dice {
                 l3.setText(String.valueOf(s2));
                 l5.setText(String.valueOf(s1+s2));
                 Controller.addResource(s1+s2);
-                Controller.players[0].resource[0]+=1;
+                System.out.println(Controller.players[1].resource[0]);
+                Controller.players[1].resource[0]+=1;
+
             }
         });
 

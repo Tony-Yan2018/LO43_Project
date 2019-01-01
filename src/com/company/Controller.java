@@ -76,7 +76,7 @@ public class Controller {
             playerButtons[i]=new UButton(i);
         }
         setScroller();
-
+//        new Thread(ListT).start();
         turnB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -97,21 +97,21 @@ public class Controller {
 
 
 
-        for(int i=0;i<4;i++){
-            act=0;
-            flag=i;
-            initialTurnCount++;
-            while(players[flag].VillageList.size()!=2){
-                System.out.println(flag);
-            }
-//            try{
-//                Thread.sleep(10000);}
-//            catch(InterruptedException e){
-//                e.printStackTrace();
-//
+//        for(int i=0;i<4;i++){
+//            act=0;
+//            flag=i;
+//            initialTurnCount++;
+//            while(players[flag].VillageList.size()!=2){
+//                System.out.println(flag);
 //            }
-        }
-        act=-1;flag=0;
+////            try{
+////                Thread.sleep(10000);}
+////            catch(InterruptedException e){
+////                e.printStackTrace();
+////
+////            }
+//        }
+//        act=-1;flag=0;
     }
     //generate a random number from 0 to 18
     public int wormholeDeterminer(){
@@ -174,7 +174,23 @@ public class Controller {
         double xC=(double)sceneWidth/2;//the center of the window which is also the center of map
         double yC=(double)sceneHeight/2;
         int m=1;//indicate the map to use
-
+        SwingUtilities.invokeLater(new Runnable(){
+            public void run() {
+//				for(int i=0;i<4;i++) {
+//					LT[i].updateUI();
+//				}
+                while (true) {
+                    System.out.println(Thread.currentThread().getName());
+                    for (int i = 0; i < 4; i++)
+                        ListT.LT[i].updateUI();
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
         Controller visualisation=new Controller(xC,yC,side,title,sceneWidth,sceneHeight,m);
 
         MyListOfVertex.va[2].idPlayer=2;
