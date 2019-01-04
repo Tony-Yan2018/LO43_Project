@@ -10,8 +10,8 @@ public class Vertex {
     boolean city = false;
     Vertex next = null;
     int num;
-    int idPlayer = -1;
-    HashSet<Integer> HexNum = new HashSet<>(3);
+    int idPlayer = -1;//indicate the player who occupied this vertex
+    HashSet<Integer> HexNum = new HashSet<>(3);//indicate the hexagons the vertex belongs to
     /*copy constructor*/
     public Vertex(Vertex v){
         xCoord=v.xCoord;

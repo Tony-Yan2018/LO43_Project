@@ -1,16 +1,21 @@
 package userInterface;
 
 import com.company.Controller;
+import com.company.Hexagone;
+import com.company.Maps;
+import com.company.myGUIWindow;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 
 public class UseCardFrame extends JFrame {
     JPanel useCard;
     JButton bt1;
     JButton bt2;
     JButton bt3;
+    JButton bt4;
     JLabel LB1;
     int playerID;
     public UseCardFrame(int pID){
@@ -26,7 +31,8 @@ public class UseCardFrame extends JFrame {
         bt1 = new JButton("Harvest Card: "+ Controller.players[playerID].harvestCard);
         bt2 = new JButton("Road Card: "+Controller.players[playerID].roadCard);
         bt3 = new JButton("Score Card: "+Controller.players[playerID].currentScoreCard());
-        LB1 = new JLabel("Use your cards");
+        bt4 = new JButton("Get back to 1985!!!");
+        LB1 = new JLabel("Use your cards or your time machine");
         bt1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -60,14 +66,41 @@ public class UseCardFrame extends JFrame {
                 }
             }
         });
+        bt4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(Controller.players[Controller.flag].timeMachine && Controller.mapID!=4){
+                    Controller.players[Controller.flag].timeMachine=false;
+                    Controller.mapID=4;
+                    Controller.map= Maps.mapDeterminer(Controller.mapID);
+                    for(int i=0;i<19;i++){
+                        myGUIWindow.canvas.remove(Controller.getHEX()[i].diceRes);
+                    }
+                    for(int i=0;i<19;i++){
+                        Controller.getHEX()[i]=new Hexagone(Controller.xCoord,Controller.yCoord,Controller.side,i);
+                    }
+                    for(int i=0;i<19;i++){
+                        myGUIWindow.canvas.add(Controller.getHEX()[i].diceRes);
+                    }
+                    //                System.out.println(HEX[0].diceRes.getText());
+                    myGUIWindow.canvas.validate();
+                    myGUIWindow.canvas.updateUI();
+                    myGUIWindow.canvas.repaint();
+                }
+            }
+        });
         useCard.add(bt1);
         useCard.add(bt2);
         useCard.add(bt3);
+        useCard.add(bt4);
         useCard.add(LB1);
         bt1.setBounds(20,200,160,30);
         bt2.setBounds(220,200,160,30);
         bt3.setBounds(420,200,160,30);
-        LB1.setBounds(220,100,100,30);
+        if(Controller.players[Controller.flag].timeMachine) {
+            bt4.setBounds(220, 300, 160, 30);
+        }
+        LB1.setBounds(220,100,500,30);
 
     }
 

@@ -17,6 +17,7 @@ public class Player {
 	public boolean roadKing = false;
 	public boolean scoreCard = false;
 	public int scoreCardCount=0;
+	public boolean timeMachine = false;
 	public int harvestCard = 0;
 	public int roadCard = 0;
 	public Color color;
@@ -75,7 +76,6 @@ public class Player {
 		resource[3]-=q4;
 	}
 	public int getCard() {
-
 		Random ran = new Random();
 		int i=ran.nextInt(3-1)+1;
 		switch (i){
@@ -126,6 +126,9 @@ public class Player {
 			return 1;
 		else
 			return 0;
+	}
+	public void useTimeMachine(){
+		timeMachine=false;
 	}
 
 }

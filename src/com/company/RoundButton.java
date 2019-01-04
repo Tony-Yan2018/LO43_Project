@@ -31,8 +31,6 @@ public class RoundButton extends JButton {
                 else if(Controller.act==1&&MyListOfVertex.va[idButton].village&&!MyListOfVertex.va[idButton].city){
                     updateInfo(++count);
                     Controller.act=-1;
-
-
                 }
             }
         });

@@ -1,13 +1,13 @@
 package com.company;
 
 public class AdjacencyListRoads {
-    static Road[] RArray = new Road[4];
+    static Road[] RArray = new Road[4];//4 indicates four players, the adjacency list has head nodes
     public AdjacencyListRoads(){
         for(int i=0;i<4;i++){
             RArray[i]=new Road();
         }
     }
-    protected  void addRoad(int left,int right,int idPlayer){
+    public  void addRoad(int left,int right,int idPlayer){
         if(AdjacencyList.ifNeighbors(left,right)&&ifRoadOccupied(left, right)&&((AdjacencyList.ifVertexOccupiedByMe(left,idPlayer)||AdjacencyList.ifVertexOccupiedByMe(right,idPlayer))||ifConnectedWithARoad(left,right,idPlayer))){
             Road current = RArray[idPlayer];
             while (current.next!=null)
@@ -17,7 +17,7 @@ public class AdjacencyListRoads {
         else
             System.out.println("cannot construct this road");
     }
-    private  boolean ifRoadOccupied(int left,int right){
+    public static boolean ifRoadOccupied(int left,int right){
         Road current;
         for(int i=0;i<4;i++){
             current=RArray[i];
@@ -29,7 +29,7 @@ public class AdjacencyListRoads {
         }
         return true;
     }
-    private  boolean ifConnectedWithARoad(int a,int b,int idP){
+    public static boolean ifConnectedWithARoad(int a,int b,int idP){
         Road current = RArray[idP];
         while (current.next!=null){
             if(current.next.leftPoint==a||current.next.leftPoint==b||current.next.rightPoint==a||current.next.rightPoint==b)
@@ -37,5 +37,25 @@ public class AdjacencyListRoads {
             current=current.next;
         }
         return false;
+    }
+    static int roadKingDeterminer(){
+        int max= 0;
+        int player = -1;
+        for(int i=0;i<4;i++){
+            int m=0;
+            Road current = RArray[i];
+            while (current.next!=null){
+                current=current.next;
+                m++;
+            }
+            if(m>max){
+                max=m;
+                player=i;
+            }
+        }
+        if(max>=5)
+            return player;
+        else
+            return -1;
     }
 }

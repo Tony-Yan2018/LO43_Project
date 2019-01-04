@@ -13,7 +13,7 @@ public class Hexagone {
     double[] xCoordinates=new double[6];
     double[] yCoordinates=new double[6];
     int id_fixed_shape;
-    JLabel diceRes;
+    public JLabel diceRes;
     HexGame HG;
      /*constructor*/
     public Hexagone(double x,double y,double s,int id){
@@ -28,12 +28,45 @@ public class Hexagone {
         MouseListener ML = new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                //super.mouseClicked(e);
-                if(Hexagone.this.HG.Wormhole)
-                diceRes.setText("Oops!");
+                if(Hexagone.this.HG.Wormhole) {
+                    diceRes.setText("Oops!");
+                    Controller.wormholeClicked=true;
+                }
+                if(Controller.currentDiceNumber==7){
+                    for(int i=0;i<19;i++){
+                        if(Controller.getHEX()[i].HG.Biff){
+                            Controller.getHEX()[i].HG.Biff=false;
+                        }
+                    }
+                    Hexagone.this.HG.Biff=true;
+                    myGUIWindow.canvas.repaint();
+                }
             }};
         diceRes.addMouseListener(ML);
     }
+//    public Hexagone(int id){
+//        HG=new HexGame(id);
+//        diceRes=new JLabel(String.valueOf(HG.diceNum));
+//        MouseListener ML = new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                if(Hexagone.this.HG.Wormhole)
+//                    diceRes.setText("Oops!");
+//            }};
+//        diceRes.addMouseListener(ML);
+//    }
+//    public Hexagone(Hexagone h){
+//        HG=h.HG;
+//        diceRes=h.diceRes;
+//        MouseListener ML = new MouseAdapter() {
+//            @Override
+//            public void mouseClicked(MouseEvent e) {
+//                if(Hexagone.this.HG.Wormhole)
+//                    diceRes.setText("Oops!");
+//            }};
+//        diceRes.addMouseListener(ML);
+//
+//    }
     private void CenterCalculator(int id_fixed_shape){
         switch (id_fixed_shape){
             case 0: xCenter=xCenter-sqrt(3)*side;

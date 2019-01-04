@@ -38,8 +38,9 @@ public class AdjacencyList {//the class to store graph info of vertex
         return false;
     }
     public static boolean ifVertexOccupiedByMe(int a,int idP){
-        if(MyListOfVertex.va[a].idPlayer==idP)
+        if(MyListOfVertex.va[a].idPlayer==idP){
             return true;
+        }
         else
             return false;
 

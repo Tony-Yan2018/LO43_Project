@@ -10,20 +10,24 @@ public class DrawingHelper {
     //helping class should not be instanced
     private void DrawingHelper(){};
     //drawing methods
-    public static void setHexColor(Graphics2D g2h,Shape s,Color c){
+    static void setHexColor(Graphics2D g2h,Shape s,Color c){
         g2h.setColor(c);
         g2h.fill(s);
     }
-    public static void setHexStroke(Graphics2D g2h,Shape s,Color c){
+    static void setHexStroke(Graphics2D g2h,Shape s,Color c){
         g2h.setColor(c);
         g2h.setStroke(new BasicStroke(4f));//Sets the Stroke for the Graphics2D context.
         g2h.draw(s);//Strokes the outline of a Shape using the settings of the current Graphics2D context
     }
-    public static void drawCircle(Graphics2D g2h,double r, double xCoor, double yCoor,Color c){
-        Ellipse2D circle = new Ellipse2D.Double(2*r,2*r,xCoor-r,yCoor-r);
-        circle.setFrameFromCenter(xCoor,yCoor,xCoor+r,yCoor+r);
-        g2h.setColor(c);
-        g2h.draw(circle);
+    static void setBiffStroke(Graphics2D g2d,int xCoord,int yCoord){
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setColor(Color.black);
+        g2d.setStroke(new BasicStroke(2.8f));
+        g2d.drawOval(xCoord-8,yCoord-5, 25, 25);
     }
-
+    static void drawRoad(Graphics2D g2d,int left,int right,int pl){
+        g2d.setStroke(new BasicStroke(8f));
+        g2d.setPaint(Controller.players[pl].color);
+        g2d.drawLine((int)(MyListOfVertex.va[left].xCoord),(int)(MyListOfVertex.va[left].yCoord),(int)(MyListOfVertex.va[right].xCoord),(int)(MyListOfVertex.va[right].yCoord));
+    }
 }

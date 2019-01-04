@@ -17,7 +17,7 @@ public class ConstructFrame extends JFrame{
 	int q1,q2,q3,q4;
 	static final JButton btn1 = new JButton("Confirm");
 	static final JButton btn2 = new JButton("Cancel");
-	static final JComboBox CB1 = new JComboBox(new String[]{"Village", "City","Road"});
+	static JComboBox CB1 = new JComboBox();
 	static JLabel LB1 = new JLabel("Mineral (5 points)");
 	static JLabel LB2 = new JLabel("Food (1 points)");
 	static JLabel LB3 = new JLabel("Textile (2 points)");
@@ -38,6 +38,11 @@ public class ConstructFrame extends JFrame{
 		JP=new JPanel();
 		setContentPane(JP);
 		JP.setLayout(null);
+		if(Controller.mapID==4)
+			CB1 = new JComboBox(new String[]{"Village", "City","Road"});
+		else
+			CB1 = new JComboBox(new String[]{"Village", "City","Road","Time Machine"});
+
 		btn1.setBounds(200,330,100,50); JP.add(btn1);
 		btn2.setBounds(300,330,100,50); JP.add(btn2);
 		CB1.setBounds(50,30,100,25); JP.add(CB1);
@@ -70,6 +75,7 @@ public class ConstructFrame extends JFrame{
 							if(sum>=7) {
 								JOptionPane.showMessageDialog(null, "You can build a village!");
 								Controller.players[thisPlayer].useRes(Mineral, Food, Textile, Material);
+//								Controller.players[thisPlayer].score++;
 								Controller.act = 0;
 								dispose();
 							}
@@ -78,6 +84,7 @@ public class ConstructFrame extends JFrame{
 							if(sum>=9){
 								JOptionPane.showMessageDialog(null, "You can build a city!");
 								Controller.players[thisPlayer].useRes(Mineral, Food, Textile, Material);
+//								Controller.players[thisPlayer].score+=2;
 								Controller.act=1;
 								dispose();
 							}
@@ -87,7 +94,42 @@ public class ConstructFrame extends JFrame{
 								JOptionPane.showMessageDialog(null, "You can build a road!");
 								Controller.players[thisPlayer].useRes(Mineral, Food, Textile, Material);
 								Controller.act=2;
+								int leftPoint = 0;
+								int rightPoint = 0;
+								String str = JOptionPane.showInputDialog("Input two numbers separated by ';'");
+								if(!"".equals(str)){
+									String[] strs = str.split(";|£»");
+									if(strs.length==2) {
+										if (Integer.parseInt(strs[0]) > Integer.parseInt(strs[1])) {
+											leftPoint = Integer.parseInt(strs[1]);
+											rightPoint = Integer.parseInt(strs[0]);
+										} else {
+											leftPoint = Integer.parseInt(strs[0]);
+											rightPoint = Integer.parseInt(strs[1]);
+										}
+										if(AdjacencyList.ifNeighbors(leftPoint,rightPoint)&&AdjacencyListRoads.ifRoadOccupied(leftPoint,rightPoint)&&((AdjacencyList.ifVertexOccupiedByMe(leftPoint,idPlayer)||AdjacencyList.ifVertexOccupiedByMe(rightPoint,idPlayer))||AdjacencyListRoads.ifConnectedWithARoad(leftPoint,rightPoint,idPlayer))){
+											Controller.ALR.addRoad(leftPoint,rightPoint,idPlayer);
+											JOptionPane.showMessageDialog(null,"You have built a road!");
+										}
+										else {
+											JOptionPane.showMessageDialog(null,"You cannot build this road, please select again!");
+										}
+									}
+									else {
+										JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
+									}
+									JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
+
+								}
+
+								Controller.ALR.addRoad(leftPoint,rightPoint,Controller.flag);
+								myGUIWindow.canvas.repaint();
+								Controller.act=-1;
 								dispose();
+							}
+						case ("Time Machine"):
+							if(sum>=10){
+								Controller.players[Controller.flag].timeMachine=true;
 							}
 
 					}

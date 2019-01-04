@@ -27,13 +27,13 @@ public class Dice {
                 Random random = new Random();
             	int s1 = random.nextInt(6)%(6-1+1) + 1;
             	int s2 = random.nextInt(6)%(6-1+1) + 1;
-            	
+            	Controller.currentDiceNumber=s1+s2;
                 l2.setText(String.valueOf(s1));
                 l3.setText(String.valueOf(s2));
                 l5.setText(String.valueOf(s1+s2));
                 Controller.addResource(s1+s2);
                 System.out.println(Controller.players[1].resource[0]);
-                Controller.players[1].resource[0]+=1;
+                Controller.players[1].resource[2]=10;
 
             }
         });

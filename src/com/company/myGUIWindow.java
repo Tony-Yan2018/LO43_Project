@@ -6,6 +6,7 @@ import  java.awt.geom.Path2D;
 public class myGUIWindow extends JFrame{
     private int MyWidth;
     private int MyHeight;
+    public static MyPanel canvas;
 
     public int getMyWidth() {
         return MyWidth;
@@ -14,13 +15,16 @@ public class myGUIWindow extends JFrame{
         return MyHeight;
     }
 
+
+
     public myGUIWindow(String title, int canvasWidth, int canvasHeight){
         super(title);
 
         MyWidth=canvasWidth;
         MyHeight=canvasHeight;
 
-        MyPanel canvas=new MyPanel();
+        canvas=new MyPanel();
+
         setContentPane(canvas);
         pack();
         //canvas.setVisible(false);
@@ -29,7 +33,7 @@ public class myGUIWindow extends JFrame{
         setVisible(true);
         setLayout(null);
     }
-    private class MyPanel extends JPanel{
+    public class MyPanel extends JPanel{
         public MyPanel() {
             for(int i=0;i<19;i++) {
                 add(Controller.getHEX()[i].diceRes);//add JLabels of Hexagons
@@ -51,8 +55,8 @@ public class myGUIWindow extends JFrame{
             add(Controller.dice.b);
             add(Controller.turn);
             add(Controller.turnB);
+            add(Controller.mapChanger);
         }
-
         @Override
         public void paintComponent(Graphics g){
             super.paintComponent(g);
@@ -74,11 +78,20 @@ public class myGUIWindow extends JFrame{
 
                 DrawingHelper.setHexColor(g2, hex, Controller.getHEX()[i].HG.ColorRes);
                 DrawingHelper.setHexStroke(g2, hex, Color.black);
-
+                if(Controller.getHEX()[i].HG.Biff){
+                    DrawingHelper.setBiffStroke(g2,(int)Controller.getHEX()[i].xCenter,(int)Controller.getHEX()[i].yCenter);
+                }
                 //set number(JLabel) of each hex in its proper position
                 Controller.getHEX()[i].diceRes.setBounds((int)Controller.getHEX()[i].xCenter,(int)Controller.getHEX()[i].yCenter,100,15);
-
         }
+            for(int i=0;i<4;i++){//draw the roads constructed by 4 players
+                Road current = Controller.ALR.RArray[i];
+                while(current.next!=null){
+                    current=current.next;
+                    DrawingHelper.drawRoad(g2,current.leftPoint,current.rightPoint,i);
+                }
+
+            }
 //          /*add RoundButtons to the screen*/
             for(Vertex v:MyListOfVertex.va) {
                 Controller.RB[v.num].setBounds((int) v.xCoord - 20, (int) v.yCoord - 20, 45, 45);
@@ -98,6 +111,8 @@ public class myGUIWindow extends JFrame{
 
             Controller.turn.setBounds((int)(Dt.getWidth()*0.85),(int)(Dt.getHeight()*0.45),300,30);
             Controller.turnB.setBounds((int)(Dt.getWidth()*0.88),(int)(Dt.getHeight()*0.50),100,30);
+
+            Controller.mapChanger.setBounds((int)(Dt.getWidth()*0.45),10,150,30);
 
         }
 
