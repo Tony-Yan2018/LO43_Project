@@ -22,7 +22,8 @@ public class Controller {
     static HashSet<Integer> HSet = new HashSet<>(3);
     static AdjacencyList AL ;
     public static AdjacencyListRoads ALR = new AdjacencyListRoads();
-    public static int act= 0;//0 to build village, 1 to build city, 2 to build road
+    public static Player[] players = new Player[4];
+    public static int act= -1;//0 to build village, 1 to build city, 2 to build road
     protected static int initialTurnCount=0;
     public static int flag = 0; // to identify the current player ranging from 0 to 3
     static boolean wormholeClicked = false;//indicate if one wormhole is clicked
@@ -30,15 +31,6 @@ public class Controller {
     static int lastRoadKing = -1;
     //view field
     private static myGUIWindow Frame;
-    static RoundButton[] RB = new RoundButton[54];
-    static UButton[] playerButtons=new UButton[16];
-    public static Player[] players = new Player[4];
-    public static ListOfTable ListT;
-    public static JScrollPane[] Jscrolls=new JScrollPane[4];
-    public static Dice dice = new Dice();
-    public static JLabel turn = new JLabel("The current player is: "+"Player"+String.valueOf(Controller.flag+1));
-    public static JButton turnB = new JButton("End Turn");
-    public static JButton mapChanger = new JButton("Change the map");
     //getters
     public static Hexagone[] getHEX() {
         return HEX;
@@ -72,7 +64,6 @@ public class Controller {
         //set number to identify the array index of the Vertex
         for(int i=0;i<MyListOfVertex.va.length;i++){
             MyListOfVertex.va[i].num=i;
-            RB[i] = new RoundButton(String.valueOf(i),i);
         }
         //instance a new Adjacency List with the parameter of the vertex array
         AL = new AdjacencyList(MyListOfVertex.getInstance());
@@ -86,69 +77,15 @@ public class Controller {
                 current=current.next;
             }//test the Adjacency List
         }*/
-        for(int i=0;i<16;i++) {
-            playerButtons[i]=new UButton(i);
-        }
-        setScroller();
-//        new Thread(ListT).start();
-        turnB.addActionListener(new ActionListener() {//click to end turn
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(flag<3)
-                    flag++;
-                else{
-                    flag=0;
-                }
-               if(initialTurnCount>=4){
-                    if(ALR.roadKingDeterminer()!=-1){//if there is a road king
-                        if(lastRoadKing!=-1){//if last road king exists
-                            players[lastRoadKing].roadKing=false;
-                            players[lastRoadKing].score-=2;
-                        }
-                        lastRoadKing=ALR.roadKingDeterminer();//set current road king as the last
-                        players[ALR.roadKingDeterminer()].roadKing=true;
-                        players[ALR.roadKingDeterminer()].score+=2;
-                    }
-               }
-                turn.setText("The current player is: "+"Player"+String.valueOf(Controller.flag+1));
-            }
-        });
-        mapChanger.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(wormholeClicked){
-                    wormholeClicked=false;
-                    Random ran = new Random();
-                    mapID = ran.nextInt(4)+1;
-                    map=Maps.mapDeterminer(mapID);
-                    for(int i=0;i<19;i++){
-                        myGUIWindow.canvas.remove(Controller.getHEX()[i].diceRes);
-                    }
-                    for(int i=0;i<19;i++){
-                        Controller.getHEX()[i]=new Hexagone(xCoord,yCoord,side,i);
-                    }
-                    for(int i=0;i<19;i++){
-                        myGUIWindow.canvas.add(Controller.getHEX()[i].diceRes);
-                    }
-    //                System.out.println(HEX[0].diceRes.getText());
-                    myGUIWindow.canvas.validate();
-                    myGUIWindow.canvas.updateUI();
-                    myGUIWindow.canvas.repaint();
-
-
-                    JOptionPane.showMessageDialog(null,"Welcome to "+Maps.year);
-                }
-            }
-        });
 
         //initialize view
         EventQueue.invokeLater(()->{
             Frame = new myGUIWindow(t,Width,Height);
 //            for (int i = 0; i < 4; i++)
-                ListT.LT[0].updateUI();
-                ListT.LT[1].updateUI();
-                ListT.LT[2].updateUI();
-                ListT.LT[3].updateUI();
+                myGUIWindow.canvas.ListT.LT[0].updateUI();
+                myGUIWindow.canvas.ListT.LT[1].updateUI();
+                myGUIWindow.canvas.ListT.LT[2].updateUI();
+                myGUIWindow.canvas.ListT.LT[3].updateUI();
 //            while (true) {
 //                System.out.println(Thread.currentThread().getName());
 //
@@ -177,7 +114,7 @@ public class Controller {
                 while (true) {
                     System.out.println(Thread.currentThread().getName());
                     for (int i = 0; i < 4; i++)
-                        ListT.LT[i].updateUI();
+                        myGUIWindow.canvas.ListT.LT[i].updateUI();
                     try {
                         Thread.sleep(2000);
                     } catch (InterruptedException e) {
@@ -225,11 +162,6 @@ public class Controller {
             H[i].HG.Wormhole=true;
         }
     }
-    private void setScroller() {//set the 4 tables with 4 JScrollPanes
-        ListT=new ListOfTable(players);
-        for(int i=0;i<4;i++)
-            Jscrolls[i]=new JScrollPane(ListT.LT[i]);
-    }
     public static void addResource(int sum){
         if(sum!=7)
         for(Hexagone h:HEX){
@@ -261,7 +193,7 @@ public class Controller {
         int sceneWidth = (int)Dt.getWidth();//width of the window
         int sceneHeight = (int)Dt.getHeight();//height of the window
         String title="Back to Catan";//title of the window
-        double side=70;//length of side of each hexagon
+        double side=74;//length of side of each hexagon
         double xC=(double)sceneWidth/2;//the center of the window which is also the center of map
         double yC=(double)sceneHeight/2;
 

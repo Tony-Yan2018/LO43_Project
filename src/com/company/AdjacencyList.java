@@ -20,7 +20,7 @@ public class AdjacencyList {//the class to store graph info of vertex
             current=AV.get(i);
             for(int j=0;j<VexNum;j++){//calculate the distance between itself and all the rest vertex
                 int d=(int)distanceCalculator(AV.get(i),AV.get(j));
-                if(d>=69 && d<=71){//important!!!the side is 70
+                if(d>=(Controller.side-1) && d<=(Controller.side+1)){//important!!!the side is 70
                     current.next = new Vertex(AV.get(j));//add a node which is the next vertex
                 }
                 while (current.next!=null)//go on to the latest node

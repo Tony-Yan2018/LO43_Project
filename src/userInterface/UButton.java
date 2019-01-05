@@ -53,7 +53,7 @@ public class UButton extends JButton {
 			}
 		});}
 		else if(idAct==1||idAct==5||idAct==9||idAct==13) {
-			setText("construct");
+			setText("Construct");
 			addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent arg0) {
