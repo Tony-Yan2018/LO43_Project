@@ -110,6 +110,9 @@ public class ConstructFrame extends JFrame{
 										if(AdjacencyList.ifNeighbors(leftPoint,rightPoint)&&AdjacencyListRoads.ifRoadOccupied(leftPoint,rightPoint)&&((AdjacencyList.ifVertexOccupiedByMe(leftPoint,idPlayer)||AdjacencyList.ifVertexOccupiedByMe(rightPoint,idPlayer))||AdjacencyListRoads.ifConnectedWithARoad(leftPoint,rightPoint,idPlayer))){
 											Controller.ALR.addRoad(leftPoint,rightPoint,idPlayer);
 											JOptionPane.showMessageDialog(null,"You have built a road!");
+											myGUIWindow.canvas.repaint();
+											Controller.act=-1;
+											dispose();
 										}
 										else {
 											JOptionPane.showMessageDialog(null,"You cannot build this road, please select again!");
@@ -118,14 +121,14 @@ public class ConstructFrame extends JFrame{
 									else {
 										JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
 									}
+								}
+								else
 									JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
 
-								}
-
-								Controller.ALR.addRoad(leftPoint,rightPoint,Controller.flag);
-								myGUIWindow.canvas.repaint();
-								Controller.act=-1;
-								dispose();
+//								Controller.ALR.addRoad(leftPoint,rightPoint,Controller.flag);
+//								myGUIWindow.canvas.repaint();
+//								Controller.act=-1;
+//								dispose();
 							}
 						case ("Time Machine"):
 							if(sum>=10){

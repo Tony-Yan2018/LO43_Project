@@ -1,6 +1,7 @@
 package com.company;
 import userInterface.Dice;
 import userInterface.ListOfTable;
+import userInterface.MyTable;
 import userInterface.UButton;
 
 import javax.swing.*;
@@ -34,11 +35,13 @@ public class myGUIWindow extends JFrame{
 
         setContentPane(canvas);
         pack();
+
         //canvas.setVisible(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setVisible(true);
         setLayout(null);
+        
     }
     public class MyPanel extends JPanel{
          RoundButton[] RB = new RoundButton[54];
@@ -65,12 +68,32 @@ public class myGUIWindow extends JFrame{
             turnB.addActionListener(new ActionListener() {//click to end turn
                 @Override
                 public void actionPerformed(ActionEvent e) {
+                	for (int i = 0; i < 4; i++){
+                		Object[][] rowData;
+            			rowData = new Object[][]{
+            					{"Mineral", Controller.players[i].resource[0]},
+            					{"Food", Controller.players[i].resource[1]},
+            					{"Textile", Controller.players[i].resource[2]},
+            					{"Material", Controller.players[i].resource[3]},
+            					{"Score", Controller.players[i].score},
+            					{"Harvest Card", Controller.players[i].harvestCard},
+            					{"Road Card", Controller.players[i].roadCard},
+            					{"Score Card", Controller.players[i].currentScoreCard()}
+            			};
+            		ListT.LT[i] = new MyTable(rowData, new Object[]{"Player" + (i + 1), "1985"});
+            		}
+                	for(int i=0;i<4;i++){//set the 4 tables with 4 JScrollPanes
+                        Jscrolls[i]=new JScrollPane(ListT.LT[i]);
+                        add(Jscrolls[i]);
+                    }
+                	Controller.initialTurnCount++;
                     if(Controller.flag<3)
                         Controller.flag++;
                     else{
                         Controller.flag=0;
                     }
                     if(Controller.initialTurnCount>=4){
+                    	Dice.DiceClick=true;
                         if(Controller.ALR.roadKingDeterminer()!=-1){//if there is a road king
                             if(Controller.lastRoadKing!=-1){//if last road king exists
                                 Controller.players[Controller.lastRoadKing].roadKing=false;
@@ -80,6 +103,11 @@ public class myGUIWindow extends JFrame{
                             Controller.players[Controller.ALR.roadKingDeterminer()].roadKing=true;
                             Controller.players[Controller.ALR.roadKingDeterminer()].score+=2;
                         }
+                    }
+                    for(int i=0;i>3;i++) {
+                    	if(Controller.players[i].score>=20) {
+                    		JOptionPane.showMessageDialog(null, "Player"+(i+1)+"is the winner!");
+                    	}
                     }
                     turn.setText("The current player is: "+"Player"+String.valueOf(Controller.flag+1));
                 }
@@ -91,7 +119,7 @@ public class myGUIWindow extends JFrame{
                         Controller.wormholeClicked=false;
                         Random ran = new Random();
                         Controller.mapID = ran.nextInt(4)+1;
-                        Controller.map=Maps.mapDeterminer(Controller.mapID);
+                        Controller.map=Maps.mapDeterminer(Controller.mapID); 
                         for(int i=0;i<19;i++){
                             myGUIWindow.canvas.remove(Controller.getHEX()[i].diceRes);
                         }
@@ -104,7 +132,7 @@ public class myGUIWindow extends JFrame{
                         //                System.out.println(HEX[0].diceRes.getText());
                         myGUIWindow.canvas.validate();
                         myGUIWindow.canvas.updateUI();
-                        myGUIWindow.canvas.repaint();
+                        myGUIWindow.canvas.repaint(); 
 
 
                         JOptionPane.showMessageDialog(null,"Welcome to "+Maps.year);

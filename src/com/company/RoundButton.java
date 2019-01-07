@@ -20,19 +20,30 @@ public class RoundButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(Controller.act==0&&!MyListOfVertex.va[idButton].village) {
-                    clicked = true;
-                    updateInfo(++count);
-                    Controller.players[0].resource[0]=10;
-                    if(Controller.initialTurnCount>4)
-                    Controller.act=-1;
-                    color=Controller.players[Controller.flag].color;
-                }
-                else if(Controller.act==1&&MyListOfVertex.va[idButton].village&&!MyListOfVertex.va[idButton].city){
-                    updateInfo(++count);
-                    Controller.act=-1;
-                }
-            }
+            		//Controller.players[0].resource[0]+=10;
+	                if(Controller.act==0&&!MyListOfVertex.va[idButton].village) {
+	                    clicked = true;
+	                    updateInfo(++count);
+	                    
+	                    if(Controller.initialTurnCount<4) {
+		                    //Controller.act=-1;
+		                    color=Controller.players[Controller.flag].color;
+		                    Controller.players[Controller.flag].score+=1;
+	                    }
+	                    if(Controller.initialTurnCount>4) {
+		                    Controller.act=-1;
+		                    color=Controller.players[Controller.flag].color;
+		                    Controller.players[Controller.flag].score+=1;
+	                    }
+	                }
+	                else if(Controller.act==1&&MyListOfVertex.va[idButton].village&&!MyListOfVertex.va[idButton].city){
+	                    updateInfo(++count);
+	                    Controller.act=-1;
+	                    Controller.players[Controller.flag].score+=2;
+	                }
+	            }
+            
+            
         });
     }
     protected void paintComponent(Graphics g) {

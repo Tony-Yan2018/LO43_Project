@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="game classes">
+    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/AdjacencyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/AdjacencyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Maps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Maps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/MyListOfVertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/MyListOfVertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AdjacencyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/UButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/UButton.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +61,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
+            <state relative-caret-position="321">
               <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -130,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="58" column="60" lean-forward="true" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+            <state relative-caret-position="855">
+              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -229,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -263,8 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546567071803</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="myGUIWindow and Controller re-encapsulated.">
+      <created>1546697023557</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546697023557</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -411,9 +399,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.18866397" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.19190283" />
       <window_info id="Structure" order="1" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,13 +409,13 @@
       <window_info id="Favorites" order="6" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.29537368" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49554655" visible="true" weight="0.27758008" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49554655" weight="0.27758008" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.2597865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49878544" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49959514" weight="0.3291815" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5044534" side_tool="true" visible="true" weight="0.27758008" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5044534" side_tool="true" visible="true" weight="0.1687389" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49959514" weight="0.081850536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -454,7 +441,8 @@
     <MESSAGE value="table update failed" />
     <MESSAGE value="frames improved" />
     <MESSAGE value="updated with map change success" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated with map change success" />
+    <MESSAGE value="myGUIWindow and Controller re-encapsulated." />
+    <option name="LAST_COMMIT_MESSAGE" value="myGUIWindow and Controller re-encapsulated." />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/java/awt/event/MouseEvent.java">
@@ -711,6 +699,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/userInterface/UseCardFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1786">
@@ -721,26 +726,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="58" column="60" lean-forward="true" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
+        <state relative-caret-position="321">
           <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />

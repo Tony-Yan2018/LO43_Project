@@ -31,7 +31,7 @@ public class UseCardFrame extends JFrame {
         bt1 = new JButton("Harvest Card: "+ Controller.players[playerID].harvestCard);
         bt2 = new JButton("Road Card: "+Controller.players[playerID].roadCard);
         bt3 = new JButton("Score Card: "+Controller.players[playerID].currentScoreCard());
-        bt4 = new JButton("Get back to 1985!!!");
+        bt4 = new JButton("Get back to 1985!!!"); 
         LB1 = new JLabel("Use your cards or your time machine");
         bt1.addActionListener(new ActionListener() {
             @Override
@@ -58,11 +58,11 @@ public class UseCardFrame extends JFrame {
         bt3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(!Controller.players[playerID].scoreCard)
+                if(Controller.players[playerID].scoreCardCount==0)
                     JOptionPane.showMessageDialog(null,"No more Score Card");
                 else {
                     Controller.players[playerID].useCard(3);
-                    setName("Score Card: "+0);
+                    setName("Score Card: "+Controller.players[playerID].scoreCardCount);
                 }
             }
         });
@@ -70,7 +70,7 @@ public class UseCardFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(Controller.players[Controller.flag].timeMachine && Controller.mapID!=4){
-                    Controller.players[Controller.flag].timeMachine=false;
+                    Controller.players[Controller.flag].useTimeMachine();
                     Controller.mapID=4;
                     Controller.map= Maps.mapDeterminer(Controller.mapID);
                     for(int i=0;i<19;i++){

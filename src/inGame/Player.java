@@ -6,6 +6,8 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class Player {
 	public ArrayList<Integer> VillageList=new ArrayList<>();//serial number of vertex which is integer
 	public ArrayList<Integer> CityList=new ArrayList<>();//serial number of vertex which is integer
@@ -86,7 +88,7 @@ public class Player {
 				roadCard+=1;
 				break;
 			case (3):
-				scoreCard=true;
+//				scoreCard=true;
 				scoreCardCount++;
 				break;
 		}
@@ -103,10 +105,54 @@ public class Player {
 				harvestCard--;
 				break;
 			case (2)://use road card
+				int i=2;
+				while(i>0) {
+					if(i==2)
+						JOptionPane.showMessageDialog(null, "You can build 2 roads! Now build the first one !");
+					else
+						JOptionPane.showMessageDialog(null, "You can build 2 roads! Now build the second one !");
+					Controller.act=2;
+					int leftPoint = 0;
+					int rightPoint = 0;
+					String str = JOptionPane.showInputDialog("Input two numbers separated by ';'");
+					if(!"".equals(str)){
+						String[] strs = str.split(";|£»");
+						if(strs.length==2) {
+							if (Integer.parseInt(strs[0]) > Integer.parseInt(strs[1])) {
+								leftPoint = Integer.parseInt(strs[1]);
+								rightPoint = Integer.parseInt(strs[0]);
+							} else {
+								leftPoint = Integer.parseInt(strs[0]);
+								rightPoint = Integer.parseInt(strs[1]);
+							}
+							if(AdjacencyList.ifNeighbors(leftPoint,rightPoint)&&AdjacencyListRoads.ifRoadOccupied(leftPoint,rightPoint)&&((AdjacencyList.ifVertexOccupiedByMe(leftPoint,num)||AdjacencyList.ifVertexOccupiedByMe(rightPoint,num))||AdjacencyListRoads.ifConnectedWithARoad(leftPoint,rightPoint,num))){
+								Controller.ALR.addRoad(leftPoint,rightPoint,Controller.flag);
+								JOptionPane.showMessageDialog(null,"You have built a road!");
+								myGUIWindow.canvas.repaint();
+								Controller.act=-1;
+							}
+							else {
+								JOptionPane.showMessageDialog(null,"You cannot build this road, please select again!");
+							}
+						}
+						else {
+							JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
+						}
+					}
+					else
+						JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
+					i--;
+				}
+				roadCard--;
 				break;
 			case(3)://use score card
-				scoreCard = false;
-				scoreCalculator();
+//				scoreCard = false;
+//				scoreCalculator();
+				if(Controller.mapID==4)
+					score+=3;
+				else
+					score+=1;
+				scoreCardCount--;
 				break;
 
 		}
@@ -129,6 +175,7 @@ public class Player {
 	}
 	public void useTimeMachine(){
 		timeMachine=false;
+		
 	}
 
 }
