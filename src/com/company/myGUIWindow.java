@@ -24,8 +24,6 @@ public class myGUIWindow extends JFrame{
         return MyHeight;
     }
 
-
-
     public myGUIWindow(String title, int canvasWidth, int canvasHeight){
         super(title);
 
@@ -48,19 +46,19 @@ public class myGUIWindow extends JFrame{
          RoundButton[] RB = new RoundButton[54];
          UButton[] playerButtons=new UButton[16];
 
-        public  ListOfTable ListT;
-        public  JScrollPane[] Jscrolls=new JScrollPane[4];
-        public  Dice dice = new Dice();
-        public  JLabel turn = new JLabel("The current player is: "+"Player"+String.valueOf(Controller.flag+1));
-        public  JButton turnB = new JButton("End Turn");
-        public  JButton mapChanger = new JButton("Change the map");
-        public  JLabel mapChangeReminder = new JLabel("(Available only if a wormhole is triggered)");
-        public  JButton refresh = new JButton("Refresh");
-        public JLabel resColor1 = new JLabel("Mineral");
-        public JLabel resColor2 = new JLabel("Grain");
-        public JLabel resColor3 = new JLabel("Textile");
-        public JLabel resColor4 = new JLabel("Building Materials");
-        public MyPanel() {
+          ListOfTable ListT;
+          JScrollPane[] Jscrolls=new JScrollPane[4];
+          Dice dice = new Dice();
+          JLabel turn = new JLabel("The current player is: "+"Player"+String.valueOf(Controller.flag+1));
+          JButton turnB = new JButton("End Turn");
+          JButton mapChanger = new JButton("Change the map");
+          JLabel mapChangeReminder = new JLabel("(Available only if a wormhole is triggered)");
+          JButton refresh = new JButton("Refresh");
+          JLabel resColor1 = new JLabel("Mineral");
+          JLabel resColor2 = new JLabel("Grain");
+          JLabel resColor3 = new JLabel("Textile");
+          JLabel resColor4 = new JLabel("Building Materials");
+         MyPanel() {
             for(int i=0;i<16;i++) {
                 playerButtons[i]=new UButton(i);
             }
