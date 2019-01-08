@@ -22,7 +22,6 @@ public class Dice {
         l4=new JLabel("Sum is : ");
         l5=new JLabel("");
         b=new JButton("Shake the dice");
-        
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
             	if(DiceClick) {
@@ -34,16 +33,11 @@ public class Dice {
 	                l3.setText(String.valueOf(s2));
 	                l5.setText(String.valueOf(s1+s2));
 	                Controller.addResource(s1+s2);
-	//              System.out.println(Controller.players[1].resource[0]);
-	//              Controller.players[1].resource[2]=10;
 	                DiceClick=false;
                     myGUIWindow.updateJTables();
             	}
 
             }
         });
-
-
 	}
-
 }

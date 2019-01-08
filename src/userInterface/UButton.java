@@ -13,10 +13,8 @@ public class UButton extends JButton {
 	public int ycoord;
 	public int xsize;
 	public int ysize;
-	int idAct;
-	int playerID;
+	private int playerID;
 	public UButton(int IDAct) {
-		idAct=IDAct;
 		xsize=100;
 		ysize=50;
 		Toolkit t = Toolkit.getDefaultToolkit();
@@ -41,7 +39,7 @@ public class UButton extends JButton {
 			xcoord=(int)Dt.getWidth()-400+(IDAct-12)*100;
 			ycoord=(int)Dt.getHeight()-105;
 		}
-		if(idAct==0||idAct==4||idAct==8||idAct==12){
+		if(IDAct ==0|| IDAct ==4|| IDAct ==8|| IDAct ==12){
 			setText("Trade");
 		addActionListener(new ActionListener() {
 			@Override
@@ -52,26 +50,22 @@ public class UButton extends JButton {
 				final TradeFrame TF=new TradeFrame("Trade",playerID);
 			}
 		});}
-		else if(idAct==1||idAct==5||idAct==9||idAct==13) {
+		else if(IDAct ==1|| IDAct ==5|| IDAct ==9|| IDAct ==13) {
 			setText("Construct");
 			addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent arg0) {
 					// TODO Auto-generated method stub
-					
-					//trade
 					final ConstructFrame TF=new ConstructFrame(playerID);
 				}
 			});
 		}
-		else if(idAct==2||idAct==6||idAct==10||idAct==14){
+		else if(IDAct ==2|| IDAct ==6|| IDAct ==10|| IDAct ==14){
 			setText("Get Card");
 			addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
-				
-				//trade
 				final GetCardFrame TF=new GetCardFrame(playerID);
 			}
 		});}
@@ -84,8 +78,5 @@ public class UButton extends JButton {
 				}
 			});
 		}
-
 	}
-	
-	
 }

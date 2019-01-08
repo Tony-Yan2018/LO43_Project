@@ -39,7 +39,6 @@ public class Player {
 			case (3):
 				color=Color.magenta;
 		}
-
 	}
 
 
@@ -177,5 +176,4 @@ public class Player {
 		timeMachine=false;
 		
 	}
-
 }

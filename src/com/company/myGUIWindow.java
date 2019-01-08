@@ -9,7 +9,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import  java.awt.geom.Path2D;
-import java.util.ArrayList;
 import java.util.Random;
 
 public class myGUIWindow extends JFrame{
@@ -33,6 +32,7 @@ public class myGUIWindow extends JFrame{
         canvas=new MyPanel();
 
         setContentPane(canvas);
+        canvas.setOpaque(false);
         pack();
 
         //canvas.setVisible(false);
@@ -58,6 +58,8 @@ public class myGUIWindow extends JFrame{
           JLabel resColor2 = new JLabel("Grain");
           JLabel resColor3 = new JLabel("Textile");
           JLabel resColor4 = new JLabel("Building Materials");
+          ImageIcon img= new ImageIcon("resourcePicture/maxresdefault.jpg");
+          JLabel picture = new JLabel(img);
          MyPanel() {
             for(int i=0;i<16;i++) {
                 playerButtons[i]=new UButton(i);
@@ -80,17 +82,17 @@ public class myGUIWindow extends JFrame{
                     }
                     if(Controller.initialTurnCount>=4){
                     	Dice.DiceClick=true;
-                        if(Controller.ALR.roadKingDeterminer()!=-1){//if there is a road king
+                        if(AdjacencyListRoads.roadKingDeterminer()!=-1){//if there is a road king
                             if(Controller.lastRoadKing!=-1){//if last road king exists
                                 Controller.players[Controller.lastRoadKing].roadKing=false;
                                 Controller.players[Controller.lastRoadKing].score-=2;
                             }
-                            Controller.lastRoadKing=Controller.ALR.roadKingDeterminer();//set current road king as the last
-                            Controller.players[Controller.ALR.roadKingDeterminer()].roadKing=true;
-                            Controller.players[Controller.ALR.roadKingDeterminer()].score+=2;
+                            Controller.lastRoadKing=AdjacencyListRoads.roadKingDeterminer();//set current road king as the last
+                            Controller.players[AdjacencyListRoads.roadKingDeterminer()].roadKing=true;
+                            Controller.players[AdjacencyListRoads.roadKingDeterminer()].score+=2;
                         }
                     }
-                    for(int i=0;i>3;i++) {
+                    for(int i=0;i>4;i++) {
                     	if(Controller.players[i].score>=20) {
                     		JOptionPane.showMessageDialog(null, "Player"+(i+1)+"is the winner!");
                     	}
@@ -153,6 +155,7 @@ public class myGUIWindow extends JFrame{
             add(resColor2);
             add(resColor3);
             add(resColor4);
+             getLayeredPane().add(picture, new Integer(Integer.MIN_VALUE));
         }
         @Override
         public void paintComponent(Graphics g){
@@ -174,7 +177,7 @@ public class myGUIWindow extends JFrame{
                 Shape hex = polyline;
 
                 DrawingHelper.setHexColor(g2, hex, Controller.getHEX()[i].HG.ColorRes);
-                DrawingHelper.setHexStroke(g2, hex, Color.black);
+                DrawingHelper.setHexStroke(g2, hex);
                 if(Controller.getHEX()[i].HG.Biff){
                     DrawingHelper.setBiffStroke(g2,(int)Controller.getHEX()[i].xCenter,(int)Controller.getHEX()[i].yCenter);
                 }
@@ -182,7 +185,7 @@ public class myGUIWindow extends JFrame{
                 Controller.getHEX()[i].diceRes.setBounds((int)Controller.getHEX()[i].xCenter,(int)Controller.getHEX()[i].yCenter,100,15);
         }
             for(int i=0;i<4;i++){//draw the roads constructed by 4 players
-                Road current = Controller.ALR.RArray[i];
+                Road current = AdjacencyListRoads.RArray[i];
                 while(current.next!=null){
                     current=current.next;
                     DrawingHelper.drawRoad(g2,current.leftPoint,current.rightPoint,i);
@@ -196,7 +199,7 @@ public class myGUIWindow extends JFrame{
             for(int i=0;i<16;i++)
                 playerButtons[i].setBounds(playerButtons[i].xcoord,playerButtons[i].ycoord,playerButtons[i].xsize,playerButtons[i].ysize);
             for(int i=0;i<4;i++)
-                Jscrolls[i].setBounds(ListT.coord[i][0], ListT.coord[i][1], ListT.coord[i][2], ListT.coord[i][3]);
+                Jscrolls[i].setBounds(ListOfTable.coord[i][0], ListOfTable.coord[i][1], ListOfTable.coord[i][2], ListOfTable.coord[i][3]);
             Toolkit t = Toolkit.getDefaultToolkit();
             Dimension Dt = t.getScreenSize();
             dice.l1.setBounds((int)(Dt.getWidth()*0.02),(int)(Dt.getHeight()*0.35),100,30);
@@ -227,6 +230,8 @@ public class myGUIWindow extends JFrame{
             DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24+30),Color.yellow);
             DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24+60),Color.cyan);
             DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24+90),Color.orange);
+
+            picture.setBounds(0, 0, (int)Dt.getWidth(),(int)Dt.getHeight());
         }
         @Override
         public Dimension getPreferredSize(){

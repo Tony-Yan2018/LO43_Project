@@ -9,7 +9,7 @@ public class Maps {
     private static final int[] mapColorRes_4={1,3,4,1,2,0,2,2,4,3,1,2,1,3,2,4,4,2,3};//1985
     static int year=1985;
     //map chooser
-    public static int[] mapDeterminer(int mapNum){
+     static int[] mapDeterminer(int mapNum){
         int[] m=new int[19];
         if(mapNum>=1&&mapNum<=4){
             switch (mapNum){

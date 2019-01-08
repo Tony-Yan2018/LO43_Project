@@ -11,28 +11,21 @@ import java.awt.event.ActionListener;
 
 
 public class UseCardFrame extends JFrame {
-    JPanel useCard;
-    JButton bt1;
-    JButton bt2;
-    JButton bt3;
-    JButton bt4;
-    JLabel LB1;
-    int playerID;
+    private int playerID;
     public UseCardFrame(int pID){
         super("Use Card");
         playerID=pID;
-        useCard = new JPanel();
+        JPanel useCard = new JPanel();
         setContentPane(useCard);
         setVisible(true);
         setLayout(null);
         setSize(600,500);
         useCard.setLayout(null);
-
-        bt1 = new JButton("Harvest Card: "+ Controller.players[playerID].harvestCard);
-        bt2 = new JButton("Road Card: "+Controller.players[playerID].roadCard);
-        bt3 = new JButton("Score Card: "+Controller.players[playerID].currentScoreCard());
-        bt4 = new JButton("Get back to 1985!!!"); 
-        LB1 = new JLabel("Use your cards or your time machine");
+        JButton bt1 = new JButton("Harvest Card: " + Controller.players[playerID].harvestCard);
+        JButton bt2 = new JButton("Road Card: " + Controller.players[playerID].roadCard);
+        JButton bt3 = new JButton("Score Card: " + Controller.players[playerID].currentScoreCard());
+        JButton bt4 = new JButton("Get back to 1985!!!");
+        JLabel LB1 = new JLabel("Use your cards or your time machine");
         bt1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -94,7 +87,5 @@ public class UseCardFrame extends JFrame {
             bt4.setBounds(220, 300, 160, 30);
         }
         LB1.setBounds(220,100,500,30);
-
     }
-
 }

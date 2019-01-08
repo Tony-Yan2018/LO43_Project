@@ -9,27 +9,22 @@ import javax.swing.text.JTextComponent;
 import com.company.*;
 public class ConstructFrame extends JFrame{
 	JPanel JP;
-	int thisPlayer;
-	Object typeConstruct;
-	Object res1,res2,res3,res4;
-	int Res1,Res2,Res3,Res4;
-	String qtty1,qtty2,qtty3,qtty4;
-	int q1,q2,q3,q4;
-	static final JButton btn1 = new JButton("Confirm");
-	static final JButton btn2 = new JButton("Cancel");
-	static JComboBox CB1 = new JComboBox();
-	static JLabel LB1 = new JLabel("Mineral (5 points)");
-	static JLabel LB2 = new JLabel("Food (1 points)");
-	static JLabel LB3 = new JLabel("Textile (2 points)");
-	static JLabel LB4 = new JLabel("Material (2 points)");
-	static final JLabel LB11 = new JLabel("Quantity:");
-	static final JLabel LB21 = new JLabel("Quantity:");
-	static final JLabel LB31 = new JLabel("Quantity:");
-	static final JLabel LB41 = new JLabel("Quantity:");
-	static final JTextField TX1 = new JTextField(30);
-	static final JTextField TX2= new JTextField(30);
-	static final JTextField TX3 = new JTextField(30);
-	static final JTextField TX4 = new JTextField(30);
+	private int thisPlayer;
+	private static final JButton btn1 = new JButton("Confirm");
+	private static final JButton btn2 = new JButton("Cancel");
+	private static JComboBox CB1 = new JComboBox();
+	private static JLabel LB1 = new JLabel("Mineral (5 points)");
+	private static JLabel LB2 = new JLabel("Food (1 points)");
+	private static JLabel LB3 = new JLabel("Textile (2 points)");
+	private static JLabel LB4 = new JLabel("Material (2 points)");
+	private static final JLabel LB11 = new JLabel("Quantity:");
+	private static final JLabel LB21 = new JLabel("Quantity:");
+	private static final JLabel LB31 = new JLabel("Quantity:");
+	private static final JLabel LB41 = new JLabel("Quantity:");
+	private static final JTextField TX1 = new JTextField(30);
+	private static final JTextField TX2= new JTextField(30);
+	private static final JTextField TX3 = new JTextField(30);
+	private static final JTextField TX4 = new JTextField(30);
 	ConstructFrame(int idPlayer){
 		super("Construction");
 		thisPlayer=idPlayer;
@@ -44,9 +39,9 @@ public class ConstructFrame extends JFrame{
 		setVisible(true);
 		JP.setLayout(null);
 		if(Controller.mapID==4)
-			CB1 = new JComboBox(new String[]{"Village", "City","Road"});
+			CB1 = new JComboBox<>(new String[]{"Village", "City","Road"});
 		else
-			CB1 = new JComboBox(new String[]{"Village", "City","Road","Time Machine"});
+			CB1 = new JComboBox<>(new String[]{"Village", "City","Road","Time Machine"});
 
 		btn1.setBounds(20,180,80,30); JP.add(btn1);
 		btn2.setBounds(130,180,80,30); JP.add(btn2);
@@ -83,7 +78,6 @@ public class ConstructFrame extends JFrame{
 								if(sum>=7) {
 									JOptionPane.showMessageDialog(null, "You can build a village!");
 									Controller.players[thisPlayer].useRes(Mineral, Food, Textile, Material);
-//								Controller.players[thisPlayer].score++;
 									Controller.act = 0;
 									dispose();
 								}
@@ -92,7 +86,6 @@ public class ConstructFrame extends JFrame{
 								if(sum>=9){
 									JOptionPane.showMessageDialog(null, "You can build a city!");
 									Controller.players[thisPlayer].useRes(Mineral, Food, Textile, Material);
-//								Controller.players[thisPlayer].score+=2;
 									Controller.act=1;
 									dispose();
 								}

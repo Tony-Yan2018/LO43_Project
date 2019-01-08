@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class AdjacencyListRoads {
     static Road[] RArray = new Road[4];//4 indicates four players, the adjacency list has head nodes
-    public AdjacencyListRoads(){
+     AdjacencyListRoads(){
         for(int i=0;i<4;i++){
             RArray[i]=new Road();
         }

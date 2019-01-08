@@ -7,10 +7,10 @@ import java.util.Iterator;
 import javax.swing.*;
 
 public class RoundButton extends JButton {
-    int idButton;
-    boolean clicked = false;
-    int count = 0;
-    Color color =Color.WHITE;
+    private int idButton;
+    private boolean clicked = false;
+    private int count = 0;
+    private Color color =Color.WHITE;
     public RoundButton(String s,int n) {
         super(s);
         idButton=n;
@@ -49,10 +49,7 @@ public class RoundButton extends JButton {
     protected void paintComponent(Graphics g) {
         if(clicked&&count==1) {//make sure that we are building a village
             g.setColor(color);
-//            if(color != Color.white)
-                setForeground(Color.white);
-//            else
-//                setForeground(Color.black);
+            setForeground(Color.white);
         }
         else if(clicked&&count==2){
             g.setColor(color);
@@ -78,7 +75,7 @@ public class RoundButton extends JButton {
             g2d.drawOval(11, 11, 20, 20);
         }
     }
-    void updateInfo(int count){
+    private void updateInfo(int count){
         switch (count){
             case (1):  //when building a village
                 MyListOfVertex.va[idButton].village=true;

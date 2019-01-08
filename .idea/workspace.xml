@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="">
+    <list default="true" id="a09ae9d1-52ea-4b70-88b5-4c5849d3304b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Catan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Catan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/AdjacencyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/AdjacencyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Maps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Maps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/MyListOfVertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/MyListOfVertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Vertex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resourcePicture/house.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AdjacencyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HexGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HexGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Hexagone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Hexagone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Maps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Road.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/RoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RoundButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inGame/DevelopCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inGame/DevelopCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/inGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inGame/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/ConstructFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/ConstructFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/GetCardFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/GetCardFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/ListOfTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/ListOfTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/MyTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/MyTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/TradeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/TradeFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/UButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/UButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userInterface/UseCardFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/UseCardFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,115 +52,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Catan$Main.ic" NAME="Main Coverage Results" MODIFIED="1544917196819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="75" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Catan" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/userInterface/UButton.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1368">
-              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userInterface/Dice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Hexagone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/RoundButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1596">
-              <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/HexGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4199">
-              <caret line="236" column="39" selection-start-line="236" selection-start-column="39" selection-end-line="236" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/DrawingHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -131,11 +66,87 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/userInterface/UseCardFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+            <state relative-caret-position="1539">
+              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1197">
+              <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Hexagone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1064">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-477">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userInterface/GetCardFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-456">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userInterface/MyTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <folding>
+                <element signature="e#972#973#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/userInterface/TradeFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2766">
+              <caret line="144" column="11" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/inGame/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -145,119 +156,105 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Singleton" />
-        <option value="Class" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tony YAN" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/SetList.java" />
-        <option value="$PROJECT_DIR$/src/com/company/AdjacencyMatrix.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RoundJButton.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/../inGame/inGame/Building.java" />
-        <option value="$PROJECT_DIR$/../inGame/inGame/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Road.java" />
-        <option value="$PROJECT_DIR$/src/inGame/DevelopCard.java" />
-        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/Dice.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/PropButton.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/ListOfJbuttons.java" />
-        <option value="$PROJECT_DIR$/src/inGame/PlayerManager.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/MyTable.java" />
-        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/ConstructFrame.java" />
-        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/GetCardFrame.java" />
-        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/Player.java" />
-        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/TradeFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/mapChangerWorker.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MyPanel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Maps.java" />
-        <option value="$PROJECT_DIR$/src/com/company/rectangleComponent.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Vertex.java" />
-        <option value="$PROJECT_DIR$/src/inGame/Player.java" />
         <option value="$PROJECT_DIR$/src/com/company/AdjacencyList.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/Dice.java" />
-        <option value="$PROJECT_DIR$/src/com/company/HexGame.java" />
         <option value="$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/UButton.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/GetCardFrame.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/TradeFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RoundButton.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Controller.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/UseCardFrame.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Hexagone.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/ConstructFrame.java" />
         <option value="$PROJECT_DIR$/src/com/company/DrawingHelper.java" />
-        <option value="$PROJECT_DIR$/src/userInterface/ListOfTable.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Maps.java" />
         <option value="$PROJECT_DIR$/src/com/company/myGUIWindow.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Road.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" />
+        <option value="$PROJECT_DIR$/src/inGame/DevelopCard.java" />
+        <option value="$PROJECT_DIR$/src/inGame/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/company/HexGame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RoundButton.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/ConstructFrame.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/Dice.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/GetCardFrame.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/ListOfTable.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/MyTable.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/TradeFrame.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/UButton.java" />
+        <option value="$PROJECT_DIR$/src/userInterface/UseCardFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Hexagone.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-30" />
-    <option name="y" value="75" />
+    <option name="x" value="20" />
+    <option name="y" value="40" />
     <option name="width" value="2520" />
-    <option name="height" value="1200" />
+    <option name="height" value="1300" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catan" type="462c0819:PsiDirectoryNode" />
+              <item name="Catan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Catan" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
             <path>
-              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catan" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Catan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Catan" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catan" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="Catan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Catan" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catan" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="inGame" type="462c0819:PsiDirectoryNode" />
+              <item name="Catan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Catan" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="company" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Catan" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="userInterface" type="462c0819:PsiDirectoryNode" />
+              <item name="Catan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Catan" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="inGame" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Catan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Catan" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Catan" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="userInterface" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546567000705" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546972239808" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -272,513 +269,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Dice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Dice.java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.company.Controller" />
       <module name="Catan" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Dice" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76614345-3560-4424-9a25-37928cc32854" name="Default Changelist" comment="" />
-      <created>1542896612783</created>
+      <changelist id="a09ae9d1-52ea-4b70-88b5-4c5849d3304b" name="Default Changelist" comment="" />
+      <created>1546952662301</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1542896612783</updated>
+      <updated>1546952662301</updated>
+      <workItem from="1546952665339" duration="348000" />
+      <workItem from="1546953036108" duration="1882000" />
+      <workItem from="1546954952920" duration="407000" />
     </task>
-    <task id="LOCAL-00001" summary="finished with data structure of graph with connection info between vertex saved">
-      <created>1544917463919</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1544917463919</updated>
-    </task>
-    <task id="LOCAL-00002" summary="game classes">
-      <created>1545161346611</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1545161346611</updated>
-    </task>
-    <task id="LOCAL-00003" summary="major update with Adjacency List of Roads,problem of hierarchy of RoundButton and Vertex resolved">
-      <created>1545443196913</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1545443196913</updated>
-    </task>
-    <task id="LOCAL-00004" summary="new package with interactive GUI classes">
-      <created>1546097568705</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1546097568705</updated>
-    </task>
-    <task id="LOCAL-00005" summary="game class to help GUI interaction">
-      <created>1546097596165</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1546097596165</updated>
-    </task>
-    <task id="LOCAL-00006" summary="game class to help GUI">
-      <created>1546097644264</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1546097644264</updated>
-    </task>
-    <task id="LOCAL-00007" summary="updated with interactions">
-      <created>1546113675883</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1546113675883</updated>
-    </task>
-    <task id="LOCAL-00008" summary="table update failed">
-      <created>1546357508756</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1546357508756</updated>
-    </task>
-    <task id="LOCAL-00009" summary="frames improved">
-      <created>1546381544592</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1546381544592</updated>
-    </task>
-    <task id="LOCAL-00010" summary="updated with map change success">
-      <created>1546567071803</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1546567071803</updated>
-    </task>
-    <task id="LOCAL-00011" summary="myGUIWindow and Controller re-encapsulated.">
-      <created>1546697023557</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1546697023557</updated>
-    </task>
-    <task id="LOCAL-00012" summary="JTable can now be updated">
-      <created>1546883236690</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1546883236690</updated>
-    </task>
-    <task id="LOCAL-00013" summary="almost finished">
-      <created>1546910713322</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1546910713322</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="703" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.16923077" />
-      <window_info id="Structure" order="1" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991274" visible="true" weight="0.24453442" />
+      <window_info id="Structure" order="1" sideWeight="0.5008726" side_tool="true" weight="0.19271255" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.21465969" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.29537368" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49311742" weight="0.111692846" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49554655" weight="0.05235602" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.09075043" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49878544" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49959514" weight="0.3291815" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5068826" side_tool="true" weight="0.2739965" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49959514" weight="0.08027923" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32984293" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32984293" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.22024292" />
-      <window_info anchor="right" id="Maven" order="9" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" weight="0.32955465" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.16680162" />
-      <window_info id="Structure" order="1" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5008881" side_tool="true" weight="0.24939272" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.21465969" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.29537368" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49311742" visible="true" weight="0.111692846" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49554655" weight="0.05235602" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49878544" weight="0.3291815" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49959514" weight="0.3291815" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5068826" side_tool="true" weight="0.2739965" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49959514" weight="0.08027923" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.22024292" />
-      <window_info anchor="right" id="Maven" order="9" />
-    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finished with data structure of graph with connection info between vertex saved" />
-    <MESSAGE value="game classes" />
-    <MESSAGE value="major update with Adjacency List of Roads,problem of hierarchy of RoundButton and Vertex resolved" />
-    <MESSAGE value="new package with interactive GUI classes" />
-    <MESSAGE value="game class to help GUI interaction" />
-    <MESSAGE value="game class to help GUI" />
-    <MESSAGE value="updated with interactions" />
-    <MESSAGE value="table update failed" />
-    <MESSAGE value="frames improved" />
-    <MESSAGE value="updated with map change success" />
-    <MESSAGE value="myGUIWindow and Controller re-encapsulated." />
-    <MESSAGE value="JTable can now be updated" />
-    <MESSAGE value="almost finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost finished" />
+    <MESSAGE value="- Final version after oral examination of the project.&#10;- Some specific functions abandoned.&#10;- Fundamental rules all realized." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Final version after oral examination of the project.&#10;- Some specific functions abandoned.&#10;- Fundamental rules all realized." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../inGame/inGame/Building.java" />
-    <entry file="file://$PROJECT_DIR$/../inGame/inGame/Player.java" />
-    <entry file="file://$PROJECT_DIR$/../inGame/inGame/CardDevelop.java" />
-    <entry file="file://$PROJECT_DIR$/resourcePicture/house.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/BuildingList.java" />
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/Building.java" />
-    <entry file="file://C:/eclipse-workspace/test/src/test/Rotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inGame/Building.java" />
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/Dice.java" />
-    <entry file="file://$PROJECT_DIR$/src/inGame/DevelopCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1114" selection-start-line="1114" selection-end-line="1114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/PropButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfJbuttons.java" />
-    <entry file="file://$PROJECT_DIR$/src/inGame/PlayerManager.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/plaf/basic/BasicTableUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39881">
-          <caret line="2185" selection-start-line="2185" selection-end-line="2185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10773">
-          <caret line="629" column="16" selection-start-line="629" selection-start-column="16" selection-end-line="629" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/JTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65949">
-          <caret line="3629" column="70" selection-start-line="3629" selection-start-column="70" selection-end-line="3629" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/ConstructFrame.java" />
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/GetCardFrame.java" />
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/Player.java" />
-    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/TradeFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/userInterface/MyTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/concurrent/FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/SwingWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/mapChangerWorker.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="387" selection-start-line="387" selection-end-line="387" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MyPanel.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/rectangleComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Road.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/UButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding>
-            <element signature="e#1956#1957#0" expanded="true" />
-            <element signature="e#2020#2021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="661" selection-start-line="661" selection-end-line="661" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/inGame/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/GetCardFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1062">
-          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
-          <folding>
-            <element signature="e#3588#3589#0" expanded="true" />
-            <element signature="e#3629#3630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/TradeFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="92" selection-start-line="13" selection-start-column="92" selection-end-line="13" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/ConstructFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1205">
-          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="uml://JAVA/" />
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Think/Documents/Mes études en France/LO43/Projet/Catan/src/inGame;C:/Users/Think/Documents/Mes études en France/LO43/Projet/Catan/src/userInterface;" />
+    <entry file="uml://JAVA/com.company.AdjacencyList" />
+    <entry file="uml://JAVA/com.company" />
+    <entry file="file://$PROJECT_DIR$/out/Catan.puml" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/company.puml" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/g.puml" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/fg.puml" />
+    <entry file="file://$PROJECT_DIR$/sw.puml" />
+    <entry file="file://$PROJECT_DIR$/src/inGame/yyui.puml" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Maps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="91" selection-start-line="5" selection-start-column="91" selection-end-line="5" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/javax/swing/JLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/Dice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Hexagone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RoundButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="88" column="53" selection-start-line="88" selection-start-column="53" selection-end-line="88" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/HexGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="124">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/myGUIWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4199">
-          <caret line="236" column="39" selection-start-line="236" selection-start-column="39" selection-end-line="236" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/DrawingHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/userInterface/UseCardFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="75" column="44" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+        <state relative-caret-position="180">
+          <caret line="55" column="51" lean-forward="true" selection-start-line="55" selection-start-column="51" selection-end-line="55" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -787,88 +370,150 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="741">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MyListOfVertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Road.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inGame/DevelopCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/DrawingHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/HexGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="67" column="152" selection-start-line="67" selection-start-column="152" selection-end-line="67" selection-end-column="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RoundButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/ConstructFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="87" column="108" selection-start-line="87" selection-start-column="108" selection-end-line="87" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/Dice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/inGame/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/GetCardFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/MyTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <folding>
+            <element signature="e#972#973#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/TradeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2766">
+          <caret line="144" column="11" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/UButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/userInterface/UseCardFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Catan</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Hexagone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

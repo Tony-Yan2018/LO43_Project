@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-public class HexGame {
+ class HexGame {
 
     Color ColorRes;//determine the color to display according to its resource
     boolean Biff;//indicate if Biff is on this hex
@@ -20,14 +20,13 @@ public class HexGame {
     private  static ArrayList<Integer> yellow_6=new ArrayList<>(Arrays.asList(4,9,3,6,8,5));
     private  static ArrayList<Integer> cyan_4=new ArrayList<>(Arrays.asList(10,6,4,11));
     private  static ArrayList<Integer> orange_4=new ArrayList<>(Arrays.asList(10,9,8,5));
-    public static boolean[] wormhole = {true,true,true};
 
-    public HexGame(int id_Hex){
+     HexGame(int id_Hex){
         setColorRes(Controller.getMap()[id_Hex]);
         setBiff(Controller.getMap()[id_Hex]);
         diceNum=diceNumPicker(ResNum);
     }
-    public void setColorRes(int colorRes) {
+    private void setColorRes(int colorRes) {
         switch (colorRes){
             case 0:ColorRes=Color.lightGray;//color of Biff
                 ResNum=0;
@@ -46,27 +45,27 @@ public class HexGame {
             break;
         }
     }
-    public void setBiff(int colorRes){
+    private void setBiff(int colorRes){
         if (colorRes==0)
             Biff=true;
         else
             Biff=false;
     }
-    public int getAndRemove(ArrayList<Integer> A){
+    private int getAndRemove(ArrayList<Integer> A){
         Random r=new Random();
         int i=r.nextInt(A.size());//generate a random index within the range of the array
         int j=A.get(i);
         A.remove(i);//remove the used number from array
         return j;
     }
-    public int diceNumPicker(int ResNum){
+    private int diceNumPicker(int ResNum){
         int dice=-1;
         switch (ResNum){
             case 0: dice=7;
             break;
             case 1: dice=getAndRemove(pink_4);
             if(pink_4.isEmpty())
-                pink_4 = new ArrayList<>(Arrays.asList(2,12,3,11));
+                pink_4 = new ArrayList<>(Arrays.asList(2,12,3,11));//regenerate each static array to avoid NullPointerException error when changing maps
             break;
             case 2: dice=getAndRemove(yellow_6);
             if(yellow_6.isEmpty())

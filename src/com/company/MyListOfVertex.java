@@ -1,8 +1,8 @@
 package com.company;
 
-public class MyListOfVertex {
+ class MyListOfVertex {
     /*data*/
-    static int realSize=0;
+    private static int realSize=0;
     static Vertex[] va = new Vertex[54] ;
     /*singleton*/
     private MyListOfVertex(){
@@ -15,7 +15,7 @@ public class MyListOfVertex {
         return MV;
     }
     /*methods*/
-    public void traverseToAdd(Vertex v,int n){
+     void traverseToAdd(Vertex v,int n){
         boolean flag = false;//indicate if there is already the same point
         for (Vertex vm:va){//has the same point
             if(vm.equal(v)){
@@ -27,7 +27,6 @@ public class MyListOfVertex {
         //no same point
         if(!flag){
             //let's add it !
-            //System.out.println("***************************:"+realSize);
             va[realSize]=v;
             realSize++;
         }

@@ -16,10 +16,8 @@ public class MyTable extends JTable{
 		dataModel.addTableModelListener(new TableModelListener() {
 			@Override
 			public void tableChanged(TableModelEvent e) {
-				System.out.println("fuck you");
 				if (e.getType() == TableModelEvent.UPDATE){
 					if (e.getColumn()==1) {
-
 						for(int i=0;i<7;i++){
 							setValueAt(dataModel.getValueAt(i,1),i,1);
 						}
@@ -28,7 +26,6 @@ public class MyTable extends JTable{
 				repaint();
 			}
 		});
-
 	}
 	public void updateUI() {
 		setUI((TableUI)UIManager.getUI(this));

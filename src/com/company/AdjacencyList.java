@@ -5,17 +5,17 @@ import java.util.Arrays;
 
 public class AdjacencyList {//the class to store graph info of vertex
     private static final int VexNum = 54;
-    static ArrayList<Vertex> AV ;//data structure
-    public AdjacencyList(MyListOfVertex m){
-        AV = new ArrayList<>(Arrays.asList(m.va));//initialize data with the vertex stored without redundancy
+    private static ArrayList<Vertex> AV ;//data structure
+     AdjacencyList( ){
+        AV = new ArrayList<>(Arrays.asList(MyListOfVertex.va));//initialize data with the vertex stored without redundancy
     }
     private double distanceCalculator(Vertex v1,Vertex v2){//calculate distance between 2 vertex
-        double d = 0;
+        double d ;
         d = Math.sqrt((v1.xCoord-v2.xCoord)*(v1.xCoord-v2.xCoord)+(v1.yCoord-v2.yCoord)*(v1.yCoord-v2.yCoord));
         return d;
     }
-    public void addConnectionInfo(){//construct the graph
-        Vertex current = null;//pointer to help construct this graph
+     void addConnectionInfo(){//construct the graph
+        Vertex current ;//pointer to help construct this graph
         for(int i=0;i<VexNum;i++){//for each vertex
             current=AV.get(i);
             for(int j=0;j<VexNum;j++){//calculate the distance between itself and all the rest vertex

@@ -45,29 +45,6 @@ public class Hexagone {
             }};
         diceRes.addMouseListener(ML);
     }
-//    public Hexagone(int id){
-//        HG=new HexGame(id);
-//        diceRes=new JLabel(String.valueOf(HG.diceNum));
-//        MouseListener ML = new MouseAdapter() {
-//            @Override
-//            public void mouseClicked(MouseEvent e) {
-//                if(Hexagone.this.HG.Wormhole)
-//                    diceRes.setText("Oops!");
-//            }};
-//        diceRes.addMouseListener(ML);
-//    }
-//    public Hexagone(Hexagone h){
-//        HG=h.HG;
-//        diceRes=h.diceRes;
-//        MouseListener ML = new MouseAdapter() {
-//            @Override
-//            public void mouseClicked(MouseEvent e) {
-//                if(Hexagone.this.HG.Wormhole)
-//                    diceRes.setText("Oops!");
-//            }};
-//        diceRes.addMouseListener(ML);
-//
-//    }
     private void CenterCalculator(int id_fixed_shape){
         switch (id_fixed_shape){
             case 0: xCenter=xCenter-sqrt(3)*side;

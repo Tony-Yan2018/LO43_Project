@@ -7,12 +7,10 @@ import java.awt.*;
 
 public class ListOfTable {
 	static public int[][] coord;
-	Object[][] rowData;
 	public MyTable[] LT= new MyTable[4];
-
 	public ListOfTable(Player[] p) {
 		for (int i = 0; i < 4; i++){
-			rowData = new Object[][]{
+			Object[][] rowData = new Object[][]{
 					{"Silver", p[i].resource[0]},
 					{"Rice", p[i].resource[1]},
 					{"Wool", p[i].resource[2]},
@@ -32,9 +30,5 @@ public class ListOfTable {
             {(int)Dt.getWidth()-200, 0, 200, 105},
             {(int)Dt.getWidth()-200, (int)Dt.getHeight()-210, 200, 105}
 		};
-
-
-
 	}
-
 }

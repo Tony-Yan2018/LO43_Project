@@ -14,14 +14,16 @@ import com.company.Controller;
 import com.company.myGUIWindow;
 
 public class GetCardFrame extends JFrame {
-    JPanel JP;
-    int thisPlayer;
+    private int thisPlayer;
     GetCardFrame(int idPlayer){
         super("Get Card");
         thisPlayer=idPlayer;
         setLayout(null);
         setSize(600,500);
-        JP=new JPanel();setContentPane(JP);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        JPanel JP = new JPanel();//local variable to minimize the scope
+        setContentPane(JP);
         JP.setLayout(null);
         final JButton btn1 = new JButton("Confirm");btn1.setBounds(200,330,100,50);
         final JButton btn2 = new JButton("Cancel");btn2.setBounds(300,330,100,50);
@@ -33,8 +35,16 @@ public class GetCardFrame extends JFrame {
         final JTextField TX2= new JTextField(30);TX2.setBounds(350,160,100,30);
         final JTextField TX3 = new JTextField(30);TX3.setBounds(350,210,100,30);
         final JTextField TX4 = new JTextField(30);TX4.setBounds(350,260,100,30);
-        JP.add(btn1);JP.add(btn2);JP.add(LB1);JP.add(LB2);JP.add(LB3);
-        JP.add(LB4);JP.add(TX1);JP.add(TX2);JP.add(TX3);JP.add(TX4);
+        JP.add(btn1);
+        JP.add(btn2);
+        JP.add(LB1);
+        JP.add(LB2);
+        JP.add(LB3);
+        JP.add(LB4);
+        JP.add(TX1);
+        JP.add(TX2);
+        JP.add(TX3);
+        JP.add(TX4);
         btn1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 int Mineral =Integer.parseInt(TX1.getText().trim());
@@ -74,7 +84,5 @@ public class GetCardFrame extends JFrame {
                 dispose();
             }
         });
-        setLocationRelativeTo(null);
-        setVisible(true);
     }
 }

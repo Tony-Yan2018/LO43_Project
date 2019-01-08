@@ -4,7 +4,7 @@ public class DevelopCard {
     private static final String Card1 = "Good Harvest";
     private static final String Card2 = "Roads";
     private static final String Card3 = "Scores";
-    String nameOfCard;
+    private String nameOfCard;
     public DevelopCard(int Ran){
         switch (Ran){
             case(1):

@@ -1,6 +1,5 @@
 package com.company;
 
-import java.awt.*;
 public class Road {
     int[] xCords=new int[2];
     int[] yCords=new int[2];

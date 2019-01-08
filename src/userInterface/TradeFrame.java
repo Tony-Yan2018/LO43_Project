@@ -6,9 +6,9 @@ import inGame.*;
 import javax.swing.*;
 import com.company.*;
 public class TradeFrame extends JFrame{
-	int tradePlayer,thisPlayer;
-	int[] idPlayers= new int[3];
-	JPanel JP;
+	private int tradePlayer,thisPlayer;
+	private int[] idPlayers= new int[3];
+
 	TradeFrame(String title,int idPlayer){
 		super(title);
 		thisPlayer=idPlayer;
@@ -31,7 +31,7 @@ public class TradeFrame extends JFrame{
 		}
 		setLayout(null);
 		setSize(300,300);
-		JP=new JPanel();
+		JPanel JP = new JPanel();
 		setContentPane(JP);
 		setResizable(false);
 		setVisible(true);
@@ -40,29 +40,37 @@ public class TradeFrame extends JFrame{
 		setLocation((int)(Dt.getWidth()*0.77),(int)(Dt.getHeight()*0.3));
 		JP.setLayout(null);
 		final JButton btn1 = new JButton("Confirm");
-		btn1.setBounds(10,200,80,30);JP.add(btn1);
+		btn1.setBounds(10,200,80,30);
+		JP.add(btn1);
 		final JButton btn2 = new JButton("Cancel");
-		btn2.setBounds(110,200,80,30);JP.add(btn2);
-		final JComboBox CB1 = new JComboBox(new String[]{"Mineral", "Food", "Textile","Material"});
-		CB1.setBounds(10, 30, 100, 20);JP.add(CB1);
+		btn2.setBounds(110,200,80,30);
+		JP.add(btn2);
+		final JComboBox CB1 = new JComboBox<>(new String[]{"Mineral", "Food", "Textile","Material"});
+		CB1.setBounds(10, 30, 100, 20);
+		JP.add(CB1);
 		final JTextField TX1 = new JTextField(30);
-		TX1.setBounds(120, 30, 100, 30);JP.add(TX1);
-		final JComboBox CB2 = new JComboBox(new String[]{"Mineral", "Food", "Textile","Material"});
-		CB2.setBounds(10, 140, 100, 20);JP.add(CB2);
+		TX1.setBounds(120, 30, 100, 30);
+		JP.add(TX1);
+		final JComboBox CB2 = new JComboBox<>(new String[]{"Mineral", "Food", "Textile","Material"});
+		CB2.setBounds(10, 140, 100, 20);
+		JP.add(CB2);
 		final JTextField TX2 = new JTextField(30);
-		TX2.setBounds(120, 140, 100, 30);JP.add(TX2);
+		TX2.setBounds(120, 140, 100, 30);
+		JP.add(TX2);
 		final JLabel label5 = new JLabel("Player to trade");
 		label5.setBounds(10,90,100,20);
 		JP.add(label5);
 		final ButtonGroup group= new ButtonGroup();
-		final JRadioButton s1=new JRadioButton(String.valueOf(idPlayers[0]));group.add(s1);JP.add(s1);
-		final JRadioButton s2=new JRadioButton(String.valueOf(idPlayers[1]));group.add(s2);JP.add(s2);
-		final JRadioButton s3=new JRadioButton(String.valueOf(idPlayers[2]));group.add(s3);JP.add(s3);
+		final JRadioButton s1=new JRadioButton(String.valueOf(idPlayers[0]));group.add(s1);
+		JP.add(s1);
+		final JRadioButton s2=new JRadioButton(String.valueOf(idPlayers[1]));group.add(s2);
+		JP.add(s2);
+		final JRadioButton s3=new JRadioButton(String.valueOf(idPlayers[2]));group.add(s3);
+		JP.add(s3);
 		s1.setBounds(115,90,40,20);
 		s2.setBounds(155,90,40,20);
 		s3.setBounds(195,90,40,20);
-		btn2.addActionListener(new ActionListener()
-		{
+		btn2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
 			{
 				dispose();
@@ -112,11 +120,8 @@ public class TradeFrame extends JFrame{
 						break;
 				}
 				myGUIWindow.updateJTables();
-//				dispose();
 			}
-
 		});
-
 		s1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -138,5 +143,4 @@ public class TradeFrame extends JFrame{
 				tradePlayer=idPlayers[2]-1;
 			}
 		});
-
 	}}
