@@ -30,4 +30,8 @@ public class DrawingHelper {
         g2d.setPaint(Controller.players[pl].color);
         g2d.drawLine((int)(MyListOfVertex.va[left].xCoord),(int)(MyListOfVertex.va[left].yCoord),(int)(MyListOfVertex.va[right].xCoord),(int)(MyListOfVertex.va[right].yCoord));
     }
+    static void drawPlayerColorIndications(Graphics2D g2d,int x,int y,Color color){
+        g2d.setColor(color);
+        g2d.fillRect(x,y,20,20);
+    }
 }

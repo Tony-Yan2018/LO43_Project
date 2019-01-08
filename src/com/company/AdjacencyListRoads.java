@@ -1,5 +1,7 @@
 package com.company;
 
+import javax.swing.*;
+
 public class AdjacencyListRoads {
     static Road[] RArray = new Road[4];//4 indicates four players, the adjacency list has head nodes
     public AdjacencyListRoads(){
@@ -13,9 +15,11 @@ public class AdjacencyListRoads {
             while (current.next!=null)
                 current=current.next;
             current.next = new Road(left,right);
+            JOptionPane.showMessageDialog(null,"Successfully built!");
+            myGUIWindow.canvas.repaint();
         }
         else
-            System.out.println("cannot construct this road");
+            JOptionPane.showMessageDialog(null,"You cannot build this road!");
     }
     public static boolean ifRoadOccupied(int left,int right){
         Road current;

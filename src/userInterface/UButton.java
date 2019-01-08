@@ -49,7 +49,7 @@ public class UButton extends JButton {
 				// TODO Auto-generated method stub
 				
 				//trade
-				final TradeFrame TF=new TradeFrame("Trade",1);
+				final TradeFrame TF=new TradeFrame("Trade",playerID);
 			}
 		});}
 		else if(idAct==1||idAct==5||idAct==9||idAct==13) {
@@ -60,7 +60,7 @@ public class UButton extends JButton {
 					// TODO Auto-generated method stub
 					
 					//trade
-					final ConstructFrame TF=new ConstructFrame(2);
+					final ConstructFrame TF=new ConstructFrame(playerID);
 				}
 			});
 		}
@@ -72,7 +72,7 @@ public class UButton extends JButton {
 				// TODO Auto-generated method stub
 				
 				//trade
-				final GetCardFrame TF=new GetCardFrame(3);
+				final GetCardFrame TF=new GetCardFrame(playerID);
 			}
 		});}
 		else{

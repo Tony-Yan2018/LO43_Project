@@ -1,5 +1,6 @@
 package userInterface;
 import com.company.Controller;
+import com.company.myGUIWindow;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -36,6 +37,7 @@ public class Dice {
 	//              System.out.println(Controller.players[1].resource[0]);
 	//              Controller.players[1].resource[2]=10;
 	                DiceClick=false;
+                    myGUIWindow.updateJTables();
             	}
 
             }

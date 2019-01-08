@@ -1,16 +1,11 @@
 package userInterface;
-import java.awt.Component;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import inGame.*;
 import javax.swing.*;
 import com.company.*;
 public class TradeFrame extends JFrame{
-	Object res1;
-	Object res2;
-	int Res1,Res2;
-	String qtty1,qtty2;
-	int Quantity1,Quantity2;
 	int tradePlayer,thisPlayer;
 	int[] idPlayers= new int[3];
 	JPanel JP;
@@ -19,27 +14,53 @@ public class TradeFrame extends JFrame{
 		thisPlayer=idPlayer;
 		switch(Controller.flag) {
 			case(0):
-				idPlayers[0]=2;idPlayers[1]=3;idPlayers[2]=4;
+				idPlayers[0]=2;
+				idPlayers[1]=3;
+				idPlayers[2]=4;
 				break;
 			case(1):
-				idPlayers[0]=1;idPlayers[1]=3;idPlayers[2]=4;
+				idPlayers[0]=1;
+				idPlayers[1]=3;
+				idPlayers[2]=4;
 				break;
 			case(3):
-				idPlayers[0]=1;idPlayers[1]=2;idPlayers[2]=3;
+				idPlayers[0]=1;
+				idPlayers[1]=2;
+				idPlayers[2]=3;
 				break;
 		}
 		setLayout(null);
-		setSize(600,500);
+		setSize(300,300);
 		JP=new JPanel();
 		setContentPane(JP);
+		setResizable(false);
+		setVisible(true);
+		Toolkit t = Toolkit.getDefaultToolkit();
+		Dimension Dt = t.getScreenSize();
+		setLocation((int)(Dt.getWidth()*0.77),(int)(Dt.getHeight()*0.3));
 		JP.setLayout(null);
-		final JButton btn1 = new JButton("Confirm");btn1.setBounds(200,330,100,50);JP.add(btn1);
-		final JButton btn2 = new JButton("Cancel");btn2.setBounds(300,330,100,50);JP.add(btn2);
-		final JComboBox CB1 = new JComboBox(new String[]{"Mineral", "Food", "Textile","Material"});CB1.setBounds(150, 80, 100, 50);JP.add(CB1);
-		final JTextField TX1 = new JTextField(30);TX1.setBounds(350, 80, 100, 50);JP.add(TX1);
-		final JComboBox CB2 = new JComboBox(new String[]{"Mineral", "Food", "Textile","Material"});CB2.setBounds(150, 200, 100, 50);JP.add(CB2);
-		final JTextField TX2 = new JTextField(30);TX2.setBounds(350, 200, 100, 50);JP.add(TX2);
-
+		final JButton btn1 = new JButton("Confirm");
+		btn1.setBounds(10,200,80,30);JP.add(btn1);
+		final JButton btn2 = new JButton("Cancel");
+		btn2.setBounds(110,200,80,30);JP.add(btn2);
+		final JComboBox CB1 = new JComboBox(new String[]{"Mineral", "Food", "Textile","Material"});
+		CB1.setBounds(10, 30, 100, 20);JP.add(CB1);
+		final JTextField TX1 = new JTextField(30);
+		TX1.setBounds(120, 30, 100, 30);JP.add(TX1);
+		final JComboBox CB2 = new JComboBox(new String[]{"Mineral", "Food", "Textile","Material"});
+		CB2.setBounds(10, 140, 100, 20);JP.add(CB2);
+		final JTextField TX2 = new JTextField(30);
+		TX2.setBounds(120, 140, 100, 30);JP.add(TX2);
+		final JLabel label5 = new JLabel("Player to trade");
+		label5.setBounds(10,90,100,20);
+		JP.add(label5);
+		final ButtonGroup group= new ButtonGroup();
+		final JRadioButton s1=new JRadioButton(String.valueOf(idPlayers[0]));group.add(s1);JP.add(s1);
+		final JRadioButton s2=new JRadioButton(String.valueOf(idPlayers[1]));group.add(s2);JP.add(s2);
+		final JRadioButton s3=new JRadioButton(String.valueOf(idPlayers[2]));group.add(s3);JP.add(s3);
+		s1.setBounds(115,90,40,20);
+		s2.setBounds(155,90,40,20);
+		s3.setBounds(195,90,40,20);
 		btn2.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
@@ -53,7 +74,7 @@ public class TradeFrame extends JFrame{
 				String Resname1 = (String)CB1.getSelectedItem();
 				String Resname2 = (String)CB2.getSelectedItem();
 				int s1 =Integer.parseInt(TX1.getText().trim());
-				int s2 =Integer.parseInt(TX1.getText().trim());
+				int s2 =Integer.parseInt(TX2.getText().trim());
 				switch(Resname1) {
 					case("Mineral"):
 						Controller.players[thisPlayer].resource[0]-=s1;
@@ -90,19 +111,12 @@ public class TradeFrame extends JFrame{
 						Controller.players[tradePlayer].resource[3]-=s2;
 						break;
 				}
-				dispose();
+				myGUIWindow.updateJTables();
+//				dispose();
 			}
 
 		});
-		final JLabel label5 = new JLabel("Player to trade");
-		label5.setBounds(40,140,100,50);
-		JP.add(label5);
-		final ButtonGroup group= new ButtonGroup();
-		final JRadioButton s1=new JRadioButton(String.valueOf(idPlayers[0]));group.add(s1);JP.add(s1);
-		final JRadioButton s2=new JRadioButton(String.valueOf(idPlayers[1]));group.add(s2);JP.add(s2);
-		final JRadioButton s3=new JRadioButton(String.valueOf(idPlayers[2]));group.add(s3);JP.add(s3);
-		s1.setBounds(150,140,100,50);s2.setBounds(250,140,100,50);s3.setBounds(350,140,100,50);
-		s1.setVisible(true);s2.setVisible(true);s3.setVisible(true);
+
 		s1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -124,7 +138,5 @@ public class TradeFrame extends JFrame{
 				tradePlayer=idPlayers[2]-1;
 			}
 		});
-		setLocationRelativeTo(null);
-		setVisible(true);
 
 	}}

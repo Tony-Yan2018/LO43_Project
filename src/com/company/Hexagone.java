@@ -39,6 +39,7 @@ public class Hexagone {
                         }
                     }
                     Hexagone.this.HG.Biff=true;
+                    myGUIWindow.updateJTables();
                     myGUIWindow.canvas.repaint();
                 }
             }};

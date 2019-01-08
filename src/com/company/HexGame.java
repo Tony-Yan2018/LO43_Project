@@ -16,10 +16,10 @@ public class HexGame {
     /*
     * dice numbers assigned to each resource
     * */
-    private  ArrayList<Integer> pink_4=new ArrayList<>(Arrays.asList(2,12,3,11));
-    private  ArrayList<Integer> yellow_6=new ArrayList<>(Arrays.asList(4,9,3,6,8,5));
-    private  ArrayList<Integer> cyan_4=new ArrayList<>(Arrays.asList(10,6,4,11));
-    private  ArrayList<Integer> orange_4=new ArrayList<>(Arrays.asList(10,9,8,5));
+    private  static ArrayList<Integer> pink_4=new ArrayList<>(Arrays.asList(2,12,3,11));
+    private  static ArrayList<Integer> yellow_6=new ArrayList<>(Arrays.asList(4,9,3,6,8,5));
+    private  static ArrayList<Integer> cyan_4=new ArrayList<>(Arrays.asList(10,6,4,11));
+    private  static ArrayList<Integer> orange_4=new ArrayList<>(Arrays.asList(10,9,8,5));
     public static boolean[] wormhole = {true,true,true};
 
     public HexGame(int id_Hex){
@@ -65,12 +65,20 @@ public class HexGame {
             case 0: dice=7;
             break;
             case 1: dice=getAndRemove(pink_4);
+            if(pink_4.isEmpty())
+                pink_4 = new ArrayList<>(Arrays.asList(2,12,3,11));
             break;
             case 2: dice=getAndRemove(yellow_6);
+            if(yellow_6.isEmpty())
+                yellow_6 = new ArrayList<>(Arrays.asList(4,9,3,6,8,5));
             break;
             case 3: dice=getAndRemove(cyan_4);
+            if(cyan_4.isEmpty())
+                cyan_4 =new ArrayList<>(Arrays.asList(10,6,4,11));
             break;
             case 4: dice=getAndRemove(orange_4);
+            if(orange_4.isEmpty())
+                orange_4 =new ArrayList<>(Arrays.asList(10,9,8,5));
             break;
         }
         return dice;

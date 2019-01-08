@@ -25,6 +25,7 @@ public class Controller {
     public static Player[] players = new Player[4];
     public static int act= 0;//0 to build village, 1 to build city, 2 to build road
     public static int initialTurnCount=0;
+    public static int initialVillageCount = 0;
     public static int flag = 0; // to identify the current player ranging from 0 to 3
     static boolean wormholeClicked = false;//indicate if one wormhole is clicked
     public static int currentDiceNumber = 0;
@@ -125,56 +126,61 @@ public class Controller {
 //        });
 
 
-//        for(int i=0;i<4;i++){
-//            act=0;
-//            flag=i;
-//            initialTurnCount++;
-//            JOptionPane.showMessageDialog(null, "Player"+(i+1)+"'s turn");
-//            JOptionPane.showMessageDialog(null, "Player"+(i+1)+"build 2 villages.");
-//            if(players[flag].VillageList.size()==2) {
-//            	while(i>0) {
-//					if(i==2)
-//						JOptionPane.showMessageDialog(null, "You can build 2 roads! Now build the first one !");
-//					else
-//						JOptionPane.showMessageDialog(null, "You can build 2 roads! Now build the second one !");
-//					int leftPoint = 0;
-//					int rightPoint = 0;
-//					String str = JOptionPane.showInputDialog("Input two numbers separated by ';'");
-//					if(!"".equals(str)){
-//						String[] strs = str.split(";|£»");
-//						if(strs.length==2) {
-//							if (Integer.parseInt(strs[0]) > Integer.parseInt(strs[1])) {
-//								leftPoint = Integer.parseInt(strs[1]);
-//								rightPoint = Integer.parseInt(strs[0]);
-//							} else {
-//								leftPoint = Integer.parseInt(strs[0]);
-//								rightPoint = Integer.parseInt(strs[1]);
-//							}
-//							if(AdjacencyList.ifNeighbors(leftPoint,rightPoint)&&AdjacencyListRoads.ifRoadOccupied(leftPoint,rightPoint)&&((AdjacencyList.ifVertexOccupiedByMe(leftPoint,i)||AdjacencyList.ifVertexOccupiedByMe(rightPoint,i))||AdjacencyListRoads.ifConnectedWithARoad(leftPoint,rightPoint,i))){
-//								Controller.ALR.addRoad(leftPoint,rightPoint,Controller.flag);
-//								JOptionPane.showMessageDialog(null,"You have built a road!");
-//								myGUIWindow.canvas.repaint();
-//							}
-//							else {
-//								JOptionPane.showMessageDialog(null,"You cannot build this road, please select again!");
-//							}
-//						}
-//						else {
-//							JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
-//						}
-//					}
-//					else
-//						JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
-//				}
-//            }
-//            try{
-//                Thread.sleep(10000);}
-//            catch(InterruptedException e){
-//                e.printStackTrace();
-//
-//            }
-//        }
-//        act=-1;flag=0;
+        for(int i=0;i<4;i++){
+            act=0;
+            flag=i;
+            initialTurnCount++;
+            JOptionPane.showMessageDialog(null, "Player"+(i+1)+" to build 2 free villages in 10s.");
+            try{
+                Thread.sleep(3000);}
+            catch(InterruptedException e){
+                e.printStackTrace();
+            }
+            if(initialVillageCount==2){
+                JOptionPane.showMessageDialog(null,"You have built 2 first villages !");
+            }
+            initialVillageCount=0;
+            if(players[flag].VillageList.size()==2) {
+                int tmp =2;
+            	while(tmp>0) {
+					if(tmp==2)
+						JOptionPane.showMessageDialog(null, "You can build 2 roads! Now build the first one !");
+					else
+						JOptionPane.showMessageDialog(null, "You can build 2 roads! Now build the second one !");
+					int leftPoint = 0;
+					int rightPoint = 0;
+					String str = JOptionPane.showInputDialog("Input two numbers separated by ';'");
+					if(!"".equals(str)){
+						String[] strs = str.split(";|£»");
+						if(strs.length==2) {
+							if (Integer.parseInt(strs[0]) > Integer.parseInt(strs[1])) {
+								leftPoint = Integer.parseInt(strs[1]);
+								rightPoint = Integer.parseInt(strs[0]);
+							} else {
+								leftPoint = Integer.parseInt(strs[0]);
+								rightPoint = Integer.parseInt(strs[1]);
+							}
+							if(AdjacencyList.ifNeighbors(leftPoint,rightPoint)&&AdjacencyListRoads.ifRoadOccupied(leftPoint,rightPoint)&&((AdjacencyList.ifVertexOccupiedByMe(leftPoint,i)||AdjacencyList.ifVertexOccupiedByMe(rightPoint,i))||AdjacencyListRoads.ifConnectedWithARoad(leftPoint,rightPoint,i))){
+								Controller.ALR.addRoad(leftPoint,rightPoint,Controller.flag);
+								JOptionPane.showMessageDialog(null,"You have built a road!");
+								myGUIWindow.canvas.repaint();
+							}
+							else {
+								JOptionPane.showMessageDialog(null,"You cannot build this road, please select again!");
+							}
+						}
+						else {
+							JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
+						}
+					}
+					else
+						JOptionPane.showMessageDialog(null,"Please enter 2 numbers!");
+					tmp--;
+				}
+            }
+
+        }
+        act=-1;flag=0;
     }
     //generate a random number from 0 to 18
     public int wormholeDeterminer(){
@@ -203,21 +209,6 @@ public class Controller {
             if(h.HG.diceNum == sum && !h.HG.Biff){
                 for(int i:h.HG.IndicesPlayer){
                     players[i].resource[h.HG.ResNum-1]+=1;
-//                    switch (i){
-//                        case (0):
-//                            PM.PS[0].resource[h.HG.ResNum]+=1;
-//                            break;
-//                        case (1):
-//                            PM.PS[1].resource[h.HG.ResNum]+=1;
-//                            break;
-//                        case (2):
-//                            PM.PS[2].resource[h.HG.ResNum]+=1;
-//                            break;
-//                        case (3):
-//                            PM.PS[3].resource[h.HG.ResNum]+=1;
-//                            break;
-//
-//                    }
                 }
             }
         }
@@ -232,10 +223,7 @@ public class Controller {
         double xC=(double)sceneWidth/2;//the center of the window which is also the center of map
         double yC=(double)sceneHeight/2;
 
-
         Controller visualisation=new Controller(xC,yC,side,title,sceneWidth,sceneHeight,mapID);
-
-
         //MyListOfVertex.va[2].idPlayer=2;
         //MyListOfVertex.va[8].idPlayer=1;
         //AdjacencyListRoads.addRoad(2,2,1);
@@ -246,6 +234,10 @@ public class Controller {
 //        ALR.addRoad(2,3,2);
 //        ALR.addRoad(9,18,2);
 //        ALR.addRoad(8,12,1);
+        for(Hexagone hg:HEX){
+            if(hg.HG.Wormhole)
+                System.out.println(hg.id_fixed_shape);
+        }
 
     }
 }

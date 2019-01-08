@@ -13,10 +13,10 @@ public class ListOfTable {
 	public ListOfTable(Player[] p) {
 		for (int i = 0; i < 4; i++){
 			rowData = new Object[][]{
-					{"Mineral", p[i].resource[0]},
-					{"Food", p[i].resource[1]},
-					{"Textile", p[i].resource[2]},
-					{"Material", p[i].resource[3]},
+					{"Silver", p[i].resource[0]},
+					{"Rice", p[i].resource[1]},
+					{"Wool", p[i].resource[2]},
+					{"Cement", p[i].resource[3]},
 					{"Score", p[i].score},
 					{"Harvest Card", p[i].harvestCard},
 					{"Road Card", p[i].roadCard},

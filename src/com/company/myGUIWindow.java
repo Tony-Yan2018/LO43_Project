@@ -9,6 +9,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import  java.awt.geom.Path2D;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class myGUIWindow extends JFrame{
@@ -54,6 +55,11 @@ public class myGUIWindow extends JFrame{
         public  JButton turnB = new JButton("End Turn");
         public  JButton mapChanger = new JButton("Change the map");
         public  JLabel mapChangeReminder = new JLabel("(Available only if a wormhole is triggered)");
+        public  JButton refresh = new JButton("Refresh");
+        public JLabel resColor1 = new JLabel("Mineral");
+        public JLabel resColor2 = new JLabel("Grain");
+        public JLabel resColor3 = new JLabel("Textile");
+        public JLabel resColor4 = new JLabel("Building Materials");
         public MyPanel() {
             for(int i=0;i<16;i++) {
                 playerButtons[i]=new UButton(i);
@@ -68,25 +74,7 @@ public class myGUIWindow extends JFrame{
             turnB.addActionListener(new ActionListener() {//click to end turn
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                	for (int i = 0; i < 4; i++){
-                		Object[][] rowData;
-            			rowData = new Object[][]{
-            					{"Mineral", Controller.players[i].resource[0]},
-            					{"Food", Controller.players[i].resource[1]},
-            					{"Textile", Controller.players[i].resource[2]},
-            					{"Material", Controller.players[i].resource[3]},
-            					{"Score", Controller.players[i].score},
-            					{"Harvest Card", Controller.players[i].harvestCard},
-            					{"Road Card", Controller.players[i].roadCard},
-            					{"Score Card", Controller.players[i].currentScoreCard()}
-            			};
-            		ListT.LT[i] = new MyTable(rowData, new Object[]{"Player" + (i + 1), "1985"});
-            		}
-                	for(int i=0;i<4;i++){//set the 4 tables with 4 JScrollPanes
-                        Jscrolls[i]=new JScrollPane(ListT.LT[i]);
-                        add(Jscrolls[i]);
-                    }
-                	Controller.initialTurnCount++;
+                    updateJTables();
                     if(Controller.flag<3)
                         Controller.flag++;
                     else{
@@ -119,17 +107,10 @@ public class myGUIWindow extends JFrame{
                         Controller.wormholeClicked=false;
                         Random ran = new Random();
                         Controller.mapID = ran.nextInt(4)+1;
-                        Controller.map=Maps.mapDeterminer(Controller.mapID); 
-                        for(int i=0;i<19;i++){
-                            myGUIWindow.canvas.remove(Controller.getHEX()[i].diceRes);
-                        }
-                        for(int i=0;i<19;i++){
-                            Controller.getHEX()[i]=new Hexagone(Controller.xCoord,Controller.yCoord,Controller.side,i);
-                        }
-                        for(int i=0;i<19;i++){
-                            myGUIWindow.canvas.add(Controller.getHEX()[i].diceRes);
-                        }
-                        //                System.out.println(HEX[0].diceRes.getText());
+                        while(Controller.mapID==4){
+                            Controller.mapID = ran.nextInt(4)+1;
+                        }//to exclude 1985
+                        dataTransfer();
                         myGUIWindow.canvas.validate();
                         myGUIWindow.canvas.updateUI();
                         myGUIWindow.canvas.repaint(); 
@@ -137,6 +118,14 @@ public class myGUIWindow extends JFrame{
 
                         JOptionPane.showMessageDialog(null,"Welcome to "+Maps.year);
                     }
+                    updateJTables();
+                }
+            });
+            refresh.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    updateJTables();
+                    canvas.repaint();
                 }
             });
             for(int i=0;i<19;i++) {
@@ -161,6 +150,11 @@ public class myGUIWindow extends JFrame{
             add(turnB);
             add(mapChanger);
             add(mapChangeReminder);
+            add(refresh);
+            add(resColor1);
+            add(resColor2);
+            add(resColor3);
+            add(resColor4);
         }
         @Override
         public void paintComponent(Graphics g){
@@ -219,12 +213,132 @@ public class myGUIWindow extends JFrame{
 
             mapChanger.setBounds((int)(Dt.getWidth()*0.45),10,150,30);
             mapChangeReminder.setBounds((int)(Dt.getWidth()*0.45)+150,10,300,30);
+            refresh.setBounds((int)(Dt.getWidth()*0.02),(int)(Dt.getHeight()*0.25),150,30);
 
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.16),5,Controller.players[0].color);
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.82),5,Controller.players[2].color);
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.16),(int)(Dt.getHeight()*0.82),Controller.players[1].color);
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.82),(int)(Dt.getHeight()*0.82),Controller.players[3].color);
+
+            resColor1.setBounds((int)(Dt.getWidth()*0.9),(int)(Dt.getHeight()*0.23),50,30);
+            resColor2.setBounds((int)(Dt.getWidth()*0.9),(int)(Dt.getHeight()*0.23+30),50,30);
+            resColor3.setBounds((int)(Dt.getWidth()*0.9),(int)(Dt.getHeight()*0.23+60),50,30);
+            resColor4.setBounds((int)(Dt.getWidth()*0.9),(int)(Dt.getHeight()*0.23+90),120,30);
+
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24),Color.pink);
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24+30),Color.yellow);
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24+60),Color.cyan);
+            DrawingHelper.drawPlayerColorIndications(g2,(int)(Dt.getWidth()*0.9)-25,(int)(Dt.getHeight()*0.24+90),Color.orange);
         }
         @Override
         public Dimension getPreferredSize(){
             return new Dimension(MyWidth,MyHeight);
         }/*determine the size of the canvas in its proper class
          */
+    }
+    public static void updateJTables(){
+        switch (Controller.mapID) {
+            case (4)://in 1985
+                for (int i = 0; i < 4; i++) {
+                    Object[][] rowData;
+                    rowData = new Object[][]{
+                            {"Silver", Controller.players[i].resource[0]},
+                            {"Rice", Controller.players[i].resource[1]},
+                            {"Wool", Controller.players[i].resource[2]},
+                            {"Cement", Controller.players[i].resource[3]},
+                            {"Score", Controller.players[i].score},
+                            {"Harvest Card", Controller.players[i].harvestCard},
+                            {"Road Card", Controller.players[i].roadCard},
+                            {"Score Card", Controller.players[i].currentScoreCard()}
+                    };
+                    canvas.ListT.LT[i] = new MyTable(rowData, new Object[]{"Player" + (i + 1), "1985"});
+                }
+                for (int i = 0; i < 4; i++) {//set the 4 tables with 4 JScrollPanes
+                    canvas.Jscrolls[i] = new JScrollPane(canvas.ListT.LT[i]);
+                    canvas.add(canvas.Jscrolls[i]);
+                }
+                break;
+            case (1)://1885
+                for (int i = 0; i < 4; i++) {
+                    Object[][] rowData;
+                    rowData = new Object[][]{
+                            {"Iron", Controller.players[i].resource[0]},
+                            {"Millet", Controller.players[i].resource[1]},
+                            {"Fibre", Controller.players[i].resource[2]},
+                            {"Wood", Controller.players[i].resource[3]},
+                            {"Score", Controller.players[i].score},
+                            {"Harvest Card", Controller.players[i].harvestCard},
+                            {"Road Card", Controller.players[i].roadCard},
+                            {"Score Card", Controller.players[i].currentScoreCard()}
+                    };
+                    canvas.ListT.LT[i] = new MyTable(rowData, new Object[]{"Player" + (i + 1), "1885"});
+                }
+                for (int i = 0; i < 4; i++) {//set the 4 tables with 4 JScrollPanes
+                    canvas.Jscrolls[i] = new JScrollPane(canvas.ListT.LT[i]);
+                    canvas.add(canvas.Jscrolls[i]);
+                }
+                break;
+            case(2):
+                for (int i = 0; i < 4; i++) {
+                    Object[][] rowData;
+                    rowData = new Object[][]{
+                            {"Cooper", Controller.players[i].resource[0]},
+                            {"Wheat", Controller.players[i].resource[1]},
+                            {"Cotton", Controller.players[i].resource[2]},
+                            {"Steel", Controller.players[i].resource[3]},
+                            {"Score", Controller.players[i].score},
+                            {"Harvest Card", Controller.players[i].harvestCard},
+                            {"Road Card", Controller.players[i].roadCard},
+                            {"Score Card", Controller.players[i].currentScoreCard()}
+                    };
+                    canvas.ListT.LT[i] = new MyTable(rowData, new Object[]{"Player" + (i + 1), "1955"});
+                }
+                for (int i = 0; i < 4; i++) {//set the 4 tables with 4 JScrollPanes
+                    canvas.Jscrolls[i] = new JScrollPane(canvas.ListT.LT[i]);
+                    canvas.add(canvas.Jscrolls[i]);
+                }
+            break;
+            case (3):
+                for (int i = 0; i < 4; i++) {
+                    Object[][] rowData;
+                    rowData = new Object[][]{
+                            {"Diamond", Controller.players[i].resource[0]},
+                            {"Potato", Controller.players[i].resource[1]},
+                            {"Silk", Controller.players[i].resource[2]},
+                            {"Concrete", Controller.players[i].resource[3]},
+                            {"Score", Controller.players[i].score},
+                            {"Harvest Card", Controller.players[i].harvestCard},
+                            {"Road Card", Controller.players[i].roadCard},
+                            {"Score Card", Controller.players[i].currentScoreCard()}
+                    };
+                    canvas.ListT.LT[i] = new MyTable(rowData, new Object[]{"Player" + (i + 1), "2015"});
+                }
+                for (int i = 0; i < 4; i++) {//set the 4 tables with 4 JScrollPanes
+                    canvas.Jscrolls[i] = new JScrollPane(canvas.ListT.LT[i]);
+                    canvas.add(canvas.Jscrolls[i]);
+                }
+
+
+        }
+    }
+    public static void dataTransfer(){
+        Controller.map=Maps.mapDeterminer(Controller.mapID);
+        for(int i=0;i<19;i++){
+            myGUIWindow.canvas.remove(Controller.getHEX()[i].diceRes);
+        }
+        Hexagone [] hex = new Hexagone[19];
+        for(int i=0;i<19;i++){
+            hex[i] =new Hexagone(Controller.xCoord,Controller.yCoord,Controller.side,i);
+            hex[i].HG.IndicesPlayer=Controller.getHEX()[i].HG.IndicesPlayer;
+            hex[i].HG.Biff= Controller.getHEX()[i].HG.Biff;
+        }
+        for(int i=0;i<19;i++){
+            Controller.getHEX()[i]=new Hexagone(Controller.xCoord,Controller.yCoord,Controller.side,i);
+            Controller.getHEX()[i].HG.Biff=hex[i].HG.Biff;
+            Controller.getHEX()[i].HG.IndicesPlayer=hex[i].HG.IndicesPlayer;
+        }
+        for(int i=0;i<19;i++){
+            myGUIWindow.canvas.add(Controller.getHEX()[i].diceRes);
+        }
     }
 }

@@ -42,6 +42,7 @@ public class UseCardFrame extends JFrame {
                     Controller.players[playerID].useCard(1);
                     setName("Harvest Card: "+Controller.players[playerID].harvestCard);
                 }
+                myGUIWindow.updateJTables();
             }
         });
         bt2.addActionListener(new ActionListener() {
@@ -53,6 +54,7 @@ public class UseCardFrame extends JFrame {
                     Controller.players[playerID].useCard(2);
                     setName("Road Card: "+Controller.players[playerID].roadCard);
                 }
+                myGUIWindow.updateJTables();
             }
         });
         bt3.addActionListener(new ActionListener() {
@@ -64,6 +66,7 @@ public class UseCardFrame extends JFrame {
                     Controller.players[playerID].useCard(3);
                     setName("Score Card: "+Controller.players[playerID].scoreCardCount);
                 }
+                myGUIWindow.updateJTables();
             }
         });
         bt4.addActionListener(new ActionListener() {
@@ -72,17 +75,7 @@ public class UseCardFrame extends JFrame {
                 if(Controller.players[Controller.flag].timeMachine && Controller.mapID!=4){
                     Controller.players[Controller.flag].useTimeMachine();
                     Controller.mapID=4;
-                    Controller.map= Maps.mapDeterminer(Controller.mapID);
-                    for(int i=0;i<19;i++){
-                        myGUIWindow.canvas.remove(Controller.getHEX()[i].diceRes);
-                    }
-                    for(int i=0;i<19;i++){
-                        Controller.getHEX()[i]=new Hexagone(Controller.xCoord,Controller.yCoord,Controller.side,i);
-                    }
-                    for(int i=0;i<19;i++){
-                        myGUIWindow.canvas.add(Controller.getHEX()[i].diceRes);
-                    }
-                    //                System.out.println(HEX[0].diceRes.getText());
+                    myGUIWindow.dataTransfer();
                     myGUIWindow.canvas.validate();
                     myGUIWindow.canvas.updateUI();
                     myGUIWindow.canvas.repaint();

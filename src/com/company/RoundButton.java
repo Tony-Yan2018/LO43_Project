@@ -23,23 +23,23 @@ public class RoundButton extends JButton {
             		//Controller.players[0].resource[0]+=10;
 	                if(Controller.act==0&&!MyListOfVertex.va[idButton].village) {
 	                    clicked = true;
-	                    updateInfo(++count);
-	                    
-	                    if(Controller.initialTurnCount<4) {
-		                    //Controller.act=-1;
+	                    if(Controller.initialTurnCount<=4&&Controller.initialVillageCount<2) {
 		                    color=Controller.players[Controller.flag].color;
 		                    Controller.players[Controller.flag].score+=1;
+		                    Controller.initialVillageCount ++;
+                            updateInfo(++count);
 	                    }
 	                    if(Controller.initialTurnCount>4) {
 		                    Controller.act=-1;
 		                    color=Controller.players[Controller.flag].color;
 		                    Controller.players[Controller.flag].score+=1;
+                            updateInfo(++count);
 	                    }
 	                }
 	                else if(Controller.act==1&&MyListOfVertex.va[idButton].village&&!MyListOfVertex.va[idButton].city){
-	                    updateInfo(++count);
 	                    Controller.act=-1;
 	                    Controller.players[Controller.flag].score+=2;
+                        updateInfo(++count);
 	                }
 	            }
             
@@ -49,7 +49,10 @@ public class RoundButton extends JButton {
     protected void paintComponent(Graphics g) {
         if(clicked&&count==1) {//make sure that we are building a village
             g.setColor(color);
-            this.setForeground(Color.white);
+//            if(color != Color.white)
+                setForeground(Color.white);
+//            else
+//                setForeground(Color.black);
         }
         else if(clicked&&count==2){
             g.setColor(color);
@@ -79,6 +82,7 @@ public class RoundButton extends JButton {
         switch (count){
             case (1):  //when building a village
                 MyListOfVertex.va[idButton].village=true;
+                MyListOfVertex.va[idButton].idPlayer = Controller.flag;
                 HashSet<Integer> HS = MyListOfVertex.va[idButton].HexNum;
                 Iterator<Integer> it = HS.iterator();
                 while(it.hasNext()){//add player info to each hex
