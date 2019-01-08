@@ -184,15 +184,15 @@
         <option value="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" />
         <option value="$PROJECT_DIR$/src/com/company/Road.java" />
         <option value="$PROJECT_DIR$/src/inGame/DevelopCard.java" />
-        <option value="$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/Dice.java" />
+        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/Dice.java" />
         <option value="$PROJECT_DIR$/src/userInterface/PropButton.java" />
         <option value="$PROJECT_DIR$/src/userInterface/ListOfJbuttons.java" />
         <option value="$PROJECT_DIR$/src/inGame/PlayerManager.java" />
         <option value="$PROJECT_DIR$/src/userInterface/MyTable.java" />
-        <option value="$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/ConstructFrame.java" />
-        <option value="$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/GetCardFrame.java" />
-        <option value="$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/Player.java" />
-        <option value="$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/TradeFrame.java" />
+        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/ConstructFrame.java" />
+        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/GetCardFrame.java" />
+        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/Player.java" />
+        <option value="C:/WeChat Files/Sirius_Orion_Black/Files/TradeFrame.java" />
         <option value="$PROJECT_DIR$/src/com/company/mapChangerWorker.java" />
         <option value="$PROJECT_DIR$/src/com/company/MyPanel.java" />
         <option value="$PROJECT_DIR$/src/com/company/Maps.java" />
@@ -219,7 +219,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-30" />
-    <option name="y" value="76" />
+    <option name="y" value="75" />
     <option name="width" value="2520" />
     <option name="height" value="1200" />
   </component>
@@ -269,7 +269,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546567000705" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../eclipse-workspace/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -512,9 +512,9 @@
     <entry file="file://$PROJECT_DIR$/resourcePicture/house.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/BuildingList.java" />
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/Building.java" />
-    <entry file="file://$PROJECT_DIR$/../../../../eclipse-workspace/test/src/test/Rotation.java">
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/BuildingList.java" />
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/Building.java" />
+    <entry file="file://C:/eclipse-workspace/test/src/test/Rotation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
           <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
@@ -526,7 +526,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/inGame/Building.java" />
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/Dice.java" />
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/Dice.java" />
     <entry file="file://$PROJECT_DIR$/src/inGame/DevelopCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -565,10 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/ConstructFrame.java" />
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/GetCardFrame.java" />
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/Player.java" />
-    <entry file="file://$PROJECT_DIR$/../../../../WeChat Files/Sirius_Orion_Black/Files/TradeFrame.java" />
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/ConstructFrame.java" />
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/GetCardFrame.java" />
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/Player.java" />
+    <entry file="file://C:/WeChat Files/Sirius_Orion_Black/Files/TradeFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/userInterface/MyTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
