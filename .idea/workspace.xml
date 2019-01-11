@@ -1,49 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Catan:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a09ae9d1-52ea-4b70-88b5-4c5849d3304b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Catan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Catan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/AdjacencyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/AdjacencyList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/DrawingHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/HexGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Hexagone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Maps.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Maps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/MyListOfVertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/MyListOfVertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/RoundButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/Vertex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow$MyPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Catan/com/company/myGUIWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcePicture/house.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AdjacencyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AdjacencyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/AdjacencyListRoads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DrawingHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/HexGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HexGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Hexagone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Hexagone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Maps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Maps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MyListOfVertex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Road.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/RoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/RoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/myGUIWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inGame/DevelopCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inGame/DevelopCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inGame/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/ConstructFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/ConstructFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/Dice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/GetCardFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/GetCardFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/ListOfTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/ListOfTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/MyTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/MyTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/TradeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/TradeFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/UButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/UButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userInterface/UseCardFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userInterface/UseCardFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +61,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477">
+            <state relative-caret-position="-425">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
@@ -115,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -124,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/userInterface/MyTable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#972#973#0" expanded="true" />
                 <element signature="e#1016#1017#0" expanded="true" />
@@ -254,7 +219,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546972239808" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546972831489" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -292,6 +260,14 @@
       <workItem from="1546953036108" duration="1882000" />
       <workItem from="1546954952920" duration="407000" />
     </task>
+    <task id="LOCAL-00001" summary="- Final version after oral examination of the project.&#10;- Some specific functions abandoned.&#10;- Fundamental rules all realized.">
+      <created>1546972293388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546972293388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -310,13 +286,13 @@
       <window_info anchor="bottom" id="Statistic" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.09075043" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.09075043" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32984293" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32984293" />
@@ -455,14 +431,14 @@
     <entry file="file://$PROJECT_DIR$/src/userInterface/ListOfTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/userInterface/MyTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#972#973#0" expanded="true" />
             <element signature="e#1016#1017#0" expanded="true" />
@@ -510,10 +486,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Vertex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-477">
+        <state relative-caret-position="-425">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Catan:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Catan</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
